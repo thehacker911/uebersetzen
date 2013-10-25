@@ -382,7 +382,7 @@ This is useful for users who want their click actions to simply cycle through to
     <string name="toggle_lte">LTE</string>
     <string name="toggle_data">Data</string>
     <string name="toggle_nfc">NFC</string>
-    <string name="toggle_silent">blabla</string>
+    <string name="toggle_silent">Silent</string>
     <string name="toggle_swagger">Swagger</string>
     <string name="toggle_sync">Sync</string>
     <string name="toggle_torch">Torch</string>
@@ -431,7 +431,7 @@ This is useful for users who want their click actions to simply cycle through to
     <string name="hex_hint">\#FF000000</string>
     <string name="set">Set</string>
     <string name="ics_color">Holo</string>
-    <string name="navigation_bar">blabla</string>
+    <string name="navigation_bar">Navigation Bar</string>
     <string name="navbar_hide">NavBar Hide Options</string>
     <string name="navbar_button_cat">Navigation Bar buttons</string>
     <string name="navbar_color_cat">Colors and Transparency</string>
@@ -473,7 +473,7 @@ This is useful for users who want their click actions to simply cycle through to
     <string name="navigation_bar_glow_tint_summary">Set the color of the glow that is displayed when you click a NavBar button</string>
     <string name="glow_times_title">Button glow animation time</string>
     <string name="glow_times_off">Off</string>
-    <string name="glow_times_superquick">blabla</string>
+    <string name="glow_times_superquick">Super quick</string>
     <string name="glow_times_quick">Quick</string>
     <string name="glow_times_normal">Normal</string>
     <string name="navbar_widgets_instructions">Swipe to view - Click to choose</string>
@@ -520,7 +520,7 @@ This is useful for users who want their click actions to simply cycle through to
     <string name="choose_action_short_title">Choose short action</string>
     <string name="choose_action_long_title">Choose long action</string>
     <string name="action_long_save">set as long action</string>
-    <string name="title_navring_amount">blabla</string>
+    <string name="title_navring_amount">Number of Navigation Ring targets</string>
     <string name="summary_navring_amount">Choose number of targets in the Navigation Ring</string>
     <string name="interface_navring_settings_title">Navigation Ring</string>
     <string name="interface_navring_settings_summary">@null</string>
