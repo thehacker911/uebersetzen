@@ -86,10 +86,10 @@
 
     :array_0
     .array-data 0x4
-        0x11t 0x1t 0xdt 0x7ft
-        0x15t 0x1t 0xdt 0x7ft
-        0x19t 0x1t 0xdt 0x7ft
-        0x1dt 0x1t 0xdt 0x7ft
+        0xet 0x1t 0xdt 0x7ft
+        0x12t 0x1t 0xdt 0x7ft
+        0x16t 0x1t 0xdt 0x7ft
+        0x1at 0x1t 0xdt 0x7ft
     .end array-data
 
     .line 69
@@ -104,10 +104,10 @@
     .line 76
     :array_2
     .array-data 0x4
-        0x10t 0x1t 0xdt 0x7ft
-        0x14t 0x1t 0xdt 0x7ft
-        0x18t 0x1t 0xdt 0x7ft
-        0x1ct 0x1t 0xdt 0x7ft
+        0xdt 0x1t 0xdt 0x7ft
+        0x11t 0x1t 0xdt 0x7ft
+        0x15t 0x1t 0xdt 0x7ft
+        0x19t 0x1t 0xdt 0x7ft
     .end array-data
 
     .line 83
@@ -169,7 +169,7 @@
     invoke-virtual {p0, v0}, Lcom/android/settings/RingerVolumePreference;->setStreamType(I)V
 
     .line 152
-    const v0, 0x7f040077
+    const v0, 0x7f040076
 
     invoke-virtual {p0, v0}, Lcom/android/settings/RingerVolumePreference;->setDialogLayoutResource(I)V
 
@@ -806,7 +806,7 @@
     .line 202
     .end local v7           #filter:Landroid/content/IntentFilter;
     :cond_3
-    const v0, 0x7f0d011a
+    const v0, 0x7f0d0117
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -816,7 +816,7 @@
 
     .line 203
     .local v9, linkCheckBox:Landroid/widget/CheckBox;
-    const v0, 0x7f0d011b
+    const v0, 0x7f0d0118
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -826,7 +826,7 @@
 
     .line 204
     .local v10, linkMuteStates:Landroid/widget/CheckBox;
-    const v0, 0x7f0d0112
+    const v0, 0x7f0d010f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -834,7 +834,7 @@
 
     .line 205
     .local v12, ringerSection:Landroid/view/View;
-    const v0, 0x7f0d0116
+    const v0, 0x7f0d0113
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

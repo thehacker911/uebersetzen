@@ -4445,9 +4445,9 @@
     .parameter "savedInstanceState"
 
     .prologue
-    const v8, 0x7f0d01a4
+    const v8, 0x7f0d01a1
 
-    const v7, 0x7f0d01a3
+    const v7, 0x7f0d01a0
 
     const/16 v6, 0x8
 

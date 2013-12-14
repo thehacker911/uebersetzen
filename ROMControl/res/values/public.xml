@@ -33,6 +33,7 @@
     <public type="drawable" name="github" id="0x7f020005" />
     <public type="drawable" name="ic_navigation_ring_hint" id="0x7f02000c" />
     <public type="drawable" name="ic_stat_notify_rom_control" id="0x7f02002a" />
+    <public type="drawable" name="APKTOOL_DUMMY_002e" id="0x7f02002e" />
     <public type="drawable" name="ic_wallpaper_exists" id="0x7f02002f" />
     <public type="drawable" name="ic_wallpaper_none" id="0x7f020030" />
     <public type="drawable" name="navbar_search_outerring" id="0x7f020033" />
@@ -98,8 +99,8 @@
     <public type="drawable" name="widget_na" id="0x7f020047" />
     <public type="drawable" name="widget_reset" id="0x7f020048" />
     <public type="drawable" name="widget_right" id="0x7f020049" />
+    <public type="drawable" name="ic_ota" id="0x7f02004a" />
     <public type="drawable" name="ic_grabber" id="0x7f020007" />
-    <public type="drawable" name="APKTOOL_DUMMY_002e" id="0x7f02002e" />
     <public type="mipmap" name="ic_launcher" id="0x7f030000" />
     <public type="layout" name="ad_excluded_app_item" id="0x7f040000" />
     <public type="layout" name="alert_dialog_text_entry" id="0x7f040001" />
@@ -2007,6 +2008,7 @@
     <public type="string" name="color_green_title" id="0x7f0b0588" />
     <public type="string" name="color_blue_title" id="0x7f0b0589" />
     <public type="string" name="reset_defaults" id="0x7f0b058a" />
+    <public type="string" name="ota_center" id="0x7f0b059a" />
     <public type="string" name="summary_off_show_reboot_keyguard" id="0x7f0b0595" />
     <public type="string" name="summary_on_show_reboot_keyguard" id="0x7f0b0596" />
     <public type="string" name="interface_softkeys_pref_default_1_title" id="0x7f0b058b" />

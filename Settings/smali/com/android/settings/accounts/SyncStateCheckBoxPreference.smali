@@ -51,7 +51,7 @@
     iput-object p3, p0, Lcom/android/settings/accounts/SyncStateCheckBoxPreference;->mAuthority:Ljava/lang/String;
 
     .line 56
-    const v0, 0x7f040088
+    const v0, 0x7f040087
 
     invoke-virtual {p0, v0}, Lcom/android/settings/accounts/SyncStateCheckBoxPreference;->setWidgetLayoutResource(I)V
 
@@ -85,7 +85,7 @@
     iput-boolean v0, p0, Lcom/android/settings/accounts/SyncStateCheckBoxPreference;->mOneTimeSyncMode:Z
 
     .line 47
-    const v0, 0x7f040088
+    const v0, 0x7f040087
 
     invoke-virtual {p0, v0}, Lcom/android/settings/accounts/SyncStateCheckBoxPreference;->setWidgetLayoutResource(I)V
 
@@ -146,7 +146,7 @@
     invoke-super {p0, p1}, Landroid/preference/CheckBoxPreference;->onBindView(Landroid/view/View;)V
 
     .line 62
-    const v6, 0x7f0d0137
+    const v6, 0x7f0d0134
 
     invoke-virtual {p1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -156,7 +156,7 @@
 
     .line 64
     .local v4, syncActiveView:Lcom/android/settings/widget/AnimatedImageView;
-    const v6, 0x7f0d0136
+    const v6, 0x7f0d0133
 
     invoke-virtual {p1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

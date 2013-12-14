@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 234
+    .line 237
     iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$4;->this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,12 +43,12 @@
     .parameter "which"
 
     .prologue
-    .line 237
+    .line 240
     const/4 v0, -0x1
 
     if-ne p2, v0, :cond_0
 
-    .line 238
+    .line 241
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$4;->this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
 
     #getter for: Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
@@ -58,7 +58,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 239
+    .line 242
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$4;->this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
 
     #getter for: Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
@@ -79,7 +79,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/net/wifi/p2p/WifiP2pManager;->cancelConnect(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
 
-    .line 250
+    .line 253
     :cond_0
     return-void
 .end method

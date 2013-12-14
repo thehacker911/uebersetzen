@@ -13,7 +13,7 @@
 
     .prologue
     .line 7
-    const-string v0, "14"
+    const-string v0, "13"
 
     sput-object v0, Lcom/koushikdutta/superuser/util/SuHelper;->CURRENT_VERSION:Ljava/lang/String;
 

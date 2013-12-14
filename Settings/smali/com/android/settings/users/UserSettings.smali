@@ -1921,7 +1921,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0d0132
+    .packed-switch 0x7f0d012f
         :pswitch_2
         :pswitch_0
         :pswitch_1
@@ -2610,7 +2610,7 @@
 
     new-instance v1, Landroid/widget/SimpleAdapter;
 
-    const v4, 0x7f0400a8
+    const v4, 0x7f0400a7
 
     const/4 v5, 0x2
 

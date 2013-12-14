@@ -459,7 +459,7 @@
     invoke-virtual {v4, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 148
-    const v4, 0x7f0d018b
+    const v4, 0x7f0d0188
 
     invoke-virtual {p0, v4}, Lcom/android/settings/DateTimeSettingsSetupWizard;->findViewById(I)Landroid/view/View;
 
@@ -777,7 +777,7 @@
     .sparse-switch
         0x7f0d003a -> :sswitch_1
         0x7f0d006f -> :sswitch_0
-        0x7f0d018b -> :sswitch_2
+        0x7f0d0188 -> :sswitch_2
     .end sparse-switch
 .end method
 

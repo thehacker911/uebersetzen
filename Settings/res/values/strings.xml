@@ -999,6 +999,10 @@ Attempts remaining :"</string>
     <string name="carrier_enabled">APN enable/disable</string>
     <string name="carrier_enabled_summaryOn">APN enabled</string>
     <string name="carrier_enabled_summaryOff">APN disabled</string>
+	<string name="aokp_version">AOKP Version</string>
+	<string name="aokp_version_default">nightly_2013-11-14</string>
+	<string name="hd">Hackdroid Version</string>
+	<string name="hd_default">5.0.0</string>  	
     <string name="bearer">Bearer</string>
     <string name="mvno_type">MVNO type</string>
     <string name="mvno_match_data">MVNO value</string>
@@ -1440,8 +1444,8 @@ Some apps may not work until updated by their developers."</string>
     <string name="accessibility_screen_magnification_summary">"When this feature is turned on, you can zoom in and out by triple-tapping the screen.
 
 While zoomed in, you can:
-"<li><ul>"Pan: Drag two or more fingers across the screen.
-"<li>Adjust zoom level: Pinch two or more fingers together or spread them apart.</li></ul></li>"
+"<ul><li>"Pan: Drag two or more fingers across the screen.
+"<li>Adjust zoom level: Pinch two or more fingers together or spread them apart.</li></li></ul>"
 
 You can also temporarily magnify what's under your finger by triple-tapping and holding. In this magnified state, you can drag your finger to explore different parts of the screen. Lift your finger to return to your previous state.
 
@@ -2039,9 +2043,10 @@ Any user can accept updated app permissions on behalf of all other users."</stri
     <string name="cell_broadcast_settings">Cell broadcasts</string>
     <string name="cell_broadcast_settings_summary">Select the types of emergency alerts to display.</string>
     <string name="quick_links_title">Quick Links</string>
-    <string name="rom_control_title">ROM Control</string>
+    <string name="rom_control_title">Hackdroid ROM Control</string>
+	<string name="toggle_control_title">Notification Toggles</string>
     <string name="themes_title">Themes</string>
-    <string name="mod_version">AOKP version</string>
+    <string name="mod_version">Copy Protection</string>
     <string name="mod_version_default">Unknown</string>
     <string name="anonymous_statistics_title">AOKP Statistics</string>
     <string name="anonymous_statistics_summary">Help make AOKP better by opting into anonymous statistics reporting</string>
@@ -2186,5 +2191,5 @@ For an example of the data that is submitted, tap on Preview Data."</string>
     <string name="confirm_delete_apn">The APN will be deleted.</string>
     <string name="label_global_roaming_settings">Global roaming settings</string>
     <string name="last_launcher">Please install or enable another launcher before you can disable or uninstall this one</string>
-    <string name="font_size_sample">Sample</string>
+	<string name="app_drawer_title">App Drawer</string>
 </resources>

@@ -63,11 +63,11 @@
 
     const v4, 0x7f080739
 
-    const v5, 0x7f0d0193
+    const v5, 0x7f0d0190
 
-    const v6, 0x7f0d0194
+    const v6, 0x7f0d0191
 
-    const v7, 0x7f0d0195
+    const v7, 0x7f0d0192
 
     invoke-direct/range {v0 .. v8}, Lcom/android/settings/TrustedCredentialsSettings$Tab;-><init>(Ljava/lang/String;ILjava/lang/String;IIIIZ)V
 
@@ -82,11 +82,11 @@
 
     const v10, 0x7f08073a
 
-    const v11, 0x7f0d0196
+    const v11, 0x7f0d0193
 
-    const v12, 0x7f0d0197
+    const v12, 0x7f0d0194
 
-    const v13, 0x7f0d0198
+    const v13, 0x7f0d0195
 
     move v14, v2
 

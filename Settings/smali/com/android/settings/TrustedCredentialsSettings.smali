@@ -235,7 +235,7 @@
 
     .line 350
     .local v3, inflater:Landroid/view/LayoutInflater;
-    const v6, 0x7f0400a4
+    const v6, 0x7f0400a3
 
     const/4 v7, 0x0
 
@@ -286,7 +286,7 @@
 
     .prologue
     .line 146
-    const v0, 0x7f0400a5
+    const v0, 0x7f0400a4
 
     const/4 v1, 0x0
 

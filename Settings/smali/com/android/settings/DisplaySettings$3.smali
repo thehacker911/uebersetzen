@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 347
+    .line 361
     iput-object p1, p0, Lcom/android/settings/DisplaySettings$3;->this$0:Lcom/android/settings/DisplaySettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,7 +40,7 @@
     .parameter "intent"
 
     .prologue
-    .line 350
+    .line 364
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
@@ -53,7 +53,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 351
+    .line 365
     iget-object v1, p0, Lcom/android/settings/DisplaySettings$3;->this$0:Lcom/android/settings/DisplaySettings;
 
     const-string v0, "android.hardware.display.extra.WIFI_DISPLAY_STATUS"
@@ -67,13 +67,13 @@
     #setter for: Lcom/android/settings/DisplaySettings;->mWifiDisplayStatus:Landroid/hardware/display/WifiDisplayStatus;
     invoke-static {v1, v0}, Lcom/android/settings/DisplaySettings;->access$202(Lcom/android/settings/DisplaySettings;Landroid/hardware/display/WifiDisplayStatus;)Landroid/hardware/display/WifiDisplayStatus;
 
-    .line 353
+    .line 367
     iget-object v0, p0, Lcom/android/settings/DisplaySettings$3;->this$0:Lcom/android/settings/DisplaySettings;
 
     #calls: Lcom/android/settings/DisplaySettings;->updateWifiDisplaySummary()V
     invoke-static {v0}, Lcom/android/settings/DisplaySettings;->access$300(Lcom/android/settings/DisplaySettings;)V
 
-    .line 355
+    .line 369
     :cond_0
     return-void
 .end method

@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 366
+    .line 365
     iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/settings/bluetooth/BluetoothSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 369
+    .line 368
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
@@ -53,7 +53,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 370
+    .line 369
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/settings/bluetooth/BluetoothSettings;
 
     #getter for: Lcom/android/settings/bluetooth/BluetoothSettings;->mUserManager:Landroid/os/UserManager;
@@ -69,11 +69,11 @@
 
     if-eqz v0, :cond_0
 
-    .line 383
+    .line 382
     :goto_0
     return-void
 
-    .line 372
+    .line 371
     :cond_0
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -81,7 +81,7 @@
 
     check-cast v7, Lcom/android/settings/bluetooth/CachedBluetoothDevice;
 
-    .line 374
+    .line 373
     .local v7, device:Lcom/android/settings/bluetooth/CachedBluetoothDevice;
     new-instance v2, Landroid/os/Bundle;
 
@@ -89,7 +89,7 @@
 
     invoke-direct {v2, v0}, Landroid/os/Bundle;-><init>(I)V
 
-    .line 375
+    .line 374
     .local v2, args:Landroid/os/Bundle;
     const-string v0, "device"
 
@@ -99,7 +99,7 @@
 
     invoke-virtual {v2, v0, v1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 377
+    .line 376
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/settings/bluetooth/BluetoothSettings;
 
     invoke-virtual {v0}, Lcom/android/settings/bluetooth/BluetoothSettings;->getActivity()Landroid/app/Activity;
@@ -124,7 +124,7 @@
 
     goto :goto_0
 
-    .line 381
+    .line 380
     .end local v2           #args:Landroid/os/Bundle;
     .end local v7           #device:Lcom/android/settings/bluetooth/CachedBluetoothDevice;
     :cond_1

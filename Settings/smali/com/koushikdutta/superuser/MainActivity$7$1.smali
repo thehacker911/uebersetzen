@@ -30,7 +30,7 @@
     .parameter
 
     .prologue
-    .line 304
+    .line 296
     iput-object p1, p0, Lcom/koushikdutta/superuser/MainActivity$7$1;->this$1:Lcom/koushikdutta/superuser/MainActivity$7;
 
     iput-boolean p2, p0, Lcom/koushikdutta/superuser/MainActivity$7$1;->val$error:Z
@@ -46,23 +46,23 @@
     .locals 1
 
     .prologue
-    .line 307
+    .line 299
     iget-boolean v0, p0, Lcom/koushikdutta/superuser/MainActivity$7$1;->val$error:Z
 
     if-eqz v0, :cond_0
 
-    .line 308
+    .line 300
     iget-object v0, p0, Lcom/koushikdutta/superuser/MainActivity$7$1;->this$1:Lcom/koushikdutta/superuser/MainActivity$7;
 
     iget-object v0, v0, Lcom/koushikdutta/superuser/MainActivity$7;->this$0:Lcom/koushikdutta/superuser/MainActivity;
 
     invoke-virtual {v0}, Lcom/koushikdutta/superuser/MainActivity;->doInstall()V
 
-    .line 313
+    .line 305
     :goto_0
     return-void
 
-    .line 311
+    .line 303
     :cond_0
     iget-object v0, p0, Lcom/koushikdutta/superuser/MainActivity$7$1;->this$1:Lcom/koushikdutta/superuser/MainActivity$7;
 

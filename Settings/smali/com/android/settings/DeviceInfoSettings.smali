@@ -829,7 +829,7 @@
     .line 98
     const-string v3, "mod_version"
 
-    const-string v4, "ro.aokp.version"
+    const-string v4, "ro.android"
 
     invoke-direct {p0, v3, v4}, Lcom/android/settings/DeviceInfoSettings;->setValueSummary(Ljava/lang/String;Ljava/lang/String;)V
 

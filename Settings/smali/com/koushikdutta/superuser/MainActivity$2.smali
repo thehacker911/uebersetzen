@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 101
+    .line 93
     iput-object p1, p0, Lcom/koushikdutta/superuser/MainActivity$2;->this$0:Lcom/koushikdutta/superuser/MainActivity;
 
     iput-object p2, p0, Lcom/koushikdutta/superuser/MainActivity$2;->val$dlg:Landroid/app/ProgressDialog;
@@ -51,7 +51,7 @@
     .end annotation
 
     .prologue
-    .line 103
+    .line 95
     new-instance v2, Ljava/util/zip/ZipFile;
 
     iget-object v3, p0, Lcom/koushikdutta/superuser/MainActivity$2;->this$0:Lcom/koushikdutta/superuser/MainActivity;
@@ -62,13 +62,13 @@
 
     invoke-direct {v2, v3}, Ljava/util/zip/ZipFile;-><init>(Ljava/lang/String;)V
 
-    .line 104
+    .line 96
     .local v2, zf:Ljava/util/zip/ZipFile;
     invoke-virtual {v2, p2}, Ljava/util/zip/ZipFile;->getEntry(Ljava/lang/String;)Ljava/util/zip/ZipEntry;
 
     move-result-object v1
 
-    .line 105
+    .line 97
     .local v1, ze:Ljava/util/zip/ZipEntry;
     new-instance v3, Ljava/util/zip/ZipEntry;
 
@@ -76,7 +76,7 @@
 
     invoke-virtual {p1, v3}, Ljava/util/zip/ZipOutputStream;->putNextEntry(Ljava/util/zip/ZipEntry;)V
 
-    .line 107
+    .line 99
     invoke-virtual {v2, v1}, Ljava/util/zip/ZipFile;->getInputStream(Ljava/util/zip/ZipEntry;)Ljava/io/InputStream;
 
     move-result-object v0
@@ -84,16 +84,16 @@
     .local v0, in:Ljava/io/InputStream;
     invoke-static {v0, p1}, Lcom/koushikdutta/superuser/util/StreamUtility;->copyStream(Ljava/io/InputStream;Ljava/io/OutputStream;)V
 
-    .line 108
+    .line 100
     invoke-virtual {p1}, Ljava/util/zip/ZipOutputStream;->closeEntry()V
 
-    .line 109
+    .line 101
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
-    .line 110
+    .line 102
     invoke-virtual {v2}, Ljava/util/zip/ZipFile;->close()V
 
-    .line 111
+    .line 103
     return-void
 .end method
 
@@ -101,7 +101,7 @@
     .locals 18
 
     .prologue
-    .line 115
+    .line 107
     :try_start_0
     move-object/from16 v0, p0
 
@@ -113,7 +113,7 @@
 
     move-result-object v10
 
-    .line 116
+    .line 108
     .local v10, zip:Ljava/io/File;
     new-instance v11, Ljava/util/zip/ZipOutputStream;
 
@@ -123,7 +123,7 @@
 
     invoke-direct {v11, v12}, Ljava/util/zip/ZipOutputStream;-><init>(Ljava/io/OutputStream;)V
 
-    .line 117
+    .line 109
     .local v11, zout:Ljava/util/zip/ZipOutputStream;
     const-string v12, "assets/update-binary"
 
@@ -133,7 +133,7 @@
 
     invoke-virtual {v0, v11, v12, v13}, Lcom/koushikdutta/superuser/MainActivity$2;->doEntry(Ljava/util/zip/ZipOutputStream;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 118
+    .line 110
     const-string v12, "assets/install-recovery.sh"
 
     const-string v13, "install-recovery.sh"
@@ -142,10 +142,10 @@
 
     invoke-virtual {v0, v11, v12, v13}, Lcom/koushikdutta/superuser/MainActivity$2;->doEntry(Ljava/util/zip/ZipOutputStream;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 119
+    .line 111
     invoke-virtual {v11}, Ljava/util/zip/ZipOutputStream;->close()V
 
-    .line 121
+    .line 113
     new-instance v9, Ljava/util/zip/ZipFile;
 
     move-object/from16 v0, p0
@@ -158,46 +158,15 @@
 
     invoke-direct {v9, v12}, Ljava/util/zip/ZipFile;-><init>(Ljava/lang/String;)V
 
-    .line 122
+    .line 114
     .local v9, zf:Ljava/util/zip/ZipFile;
-    new-instance v12, Ljava/lang/StringBuilder;
-
-    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v13, "assets/"
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/koushikdutta/superuser/MainActivity$2;->this$0:Lcom/koushikdutta/superuser/MainActivity;
-
-    #calls: Lcom/koushikdutta/superuser/MainActivity;->getArch()Ljava/lang/String;
-    invoke-static {v13}, Lcom/koushikdutta/superuser/MainActivity;->access$000(Lcom/koushikdutta/superuser/MainActivity;)Ljava/lang/String;
-
-    move-result-object v13
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    const-string v13, "/reboot"
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v12
+    const-string v12, "assets/reboot"
 
     invoke-virtual {v9, v12}, Ljava/util/zip/ZipFile;->getEntry(Ljava/lang/String;)Ljava/util/zip/ZipEntry;
 
     move-result-object v8
 
-    .line 125
+    .line 117
     .local v8, ze:Ljava/util/zip/ZipEntry;
     invoke-virtual {v9, v8}, Ljava/util/zip/ZipFile;->getInputStream(Ljava/util/zip/ZipEntry;)Ljava/io/InputStream;
 
@@ -219,13 +188,13 @@
     .local v5, reboot:Ljava/io/FileOutputStream;
     invoke-static {v3, v5}, Lcom/koushikdutta/superuser/util/StreamUtility;->copyStream(Ljava/io/InputStream;Ljava/io/OutputStream;)V
 
-    .line 126
+    .line 118
     invoke-virtual {v5}, Ljava/io/FileOutputStream;->close()V
 
-    .line 127
+    .line 119
     invoke-virtual {v3}, Ljava/io/InputStream;->close()V
 
-    .line 129
+    .line 121
     move-object/from16 v0, p0
 
     iget-object v12, v0, Lcom/koushikdutta/superuser/MainActivity$2;->this$0:Lcom/koushikdutta/superuser/MainActivity;
@@ -234,7 +203,7 @@
 
     move-result-object v7
 
-    .line 131
+    .line 123
     .local v7, su:Ljava/io/File;
     new-instance v12, Ljava/lang/StringBuilder;
 
@@ -386,7 +355,7 @@
 
     move-result-object v1
 
-    .line 142
+    .line 134
     .local v1, command:Ljava/lang/String;
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
@@ -398,7 +367,7 @@
 
     move-result-object v4
 
-    .line 143
+    .line 135
     .local v4, p:Ljava/lang/Process;
     invoke-virtual {v4}, Ljava/lang/Process;->getOutputStream()Ljava/io/OutputStream;
 
@@ -410,14 +379,14 @@
 
     invoke-virtual {v12, v13}, Ljava/io/OutputStream;->write([B)V
 
-    .line 144
+    .line 136
     invoke-virtual {v4}, Ljava/lang/Process;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object v12
 
     invoke-virtual {v12}, Ljava/io/OutputStream;->close()V
 
-    .line 145
+    .line 137
     move-object/from16 v0, p0
 
     iget-object v12, v0, Lcom/koushikdutta/superuser/MainActivity$2;->this$0:Lcom/koushikdutta/superuser/MainActivity;
@@ -428,7 +397,7 @@
 
     move-result-object v6
 
-    .line 146
+    .line 138
     .local v6, rebootScript:Ljava/io/File;
     new-instance v12, Ljava/lang/StringBuilder;
 
@@ -470,10 +439,10 @@
 
     invoke-static {v6, v12}, Lcom/koushikdutta/superuser/util/StreamUtility;->writeFile(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 147
+    .line 139
     invoke-virtual {v4}, Ljava/lang/Process;->waitFor()I
 
-    .line 148
+    .line 140
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
     move-result-object v12
@@ -522,14 +491,14 @@
 
     invoke-virtual {v12, v13}, Ljava/lang/Runtime;->exec([Ljava/lang/String;)Ljava/lang/Process;
 
-    .line 149
+    .line 141
     invoke-virtual {v4}, Ljava/lang/Process;->waitFor()I
 
     move-result v12
 
     if-eqz v12, :cond_0
 
-    .line 150
+    .line 142
     new-instance v12, Ljava/lang/Exception;
 
     const-string v13, "non zero result"
@@ -540,7 +509,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 152
+    .line 144
     .end local v1           #command:Ljava/lang/String;
     .end local v3           #in:Ljava/io/InputStream;
     .end local v4           #p:Ljava/lang/Process;
@@ -554,18 +523,18 @@
     :catch_0
     move-exception v2
 
-    .line 153
+    .line 145
     .local v2, ex:Ljava/lang/Exception;
     invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 154
+    .line 146
     move-object/from16 v0, p0
 
     iget-object v12, v0, Lcom/koushikdutta/superuser/MainActivity$2;->val$dlg:Landroid/app/ProgressDialog;
 
     invoke-virtual {v12}, Landroid/app/ProgressDialog;->dismiss()V
 
-    .line 156
+    .line 148
     move-object/from16 v0, p0
 
     iget-object v12, v0, Lcom/koushikdutta/superuser/MainActivity$2;->this$0:Lcom/koushikdutta/superuser/MainActivity;
@@ -578,7 +547,7 @@
 
     invoke-virtual {v12, v13}, Lcom/koushikdutta/superuser/MainActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 167
+    .line 159
     .end local v2           #ex:Ljava/lang/Exception;
     :cond_0
     return-void

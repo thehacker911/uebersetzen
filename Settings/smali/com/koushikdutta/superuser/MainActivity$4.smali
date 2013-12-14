@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 234
+    .line 226
     iput-object p1, p0, Lcom/koushikdutta/superuser/MainActivity$4;->this$0:Lcom/koushikdutta/superuser/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,11 +43,11 @@
     .parameter "which"
 
     .prologue
-    .line 237
+    .line 229
     iget-object v0, p0, Lcom/koushikdutta/superuser/MainActivity$4;->this$0:Lcom/koushikdutta/superuser/MainActivity;
 
     invoke-virtual {v0}, Lcom/koushikdutta/superuser/MainActivity;->doSystemInstall()V
 
-    .line 238
+    .line 230
     return-void
 .end method

@@ -49,7 +49,7 @@
     iput-object p2, p0, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     .line 45
-    const v0, 0x7f040089
+    const v0, 0x7f040088
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->setWidgetLayoutResource(I)V
 
@@ -278,7 +278,7 @@
 
     .line 56
     :goto_0
-    const v0, 0x7f0d0138
+    const v0, 0x7f0d0135
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

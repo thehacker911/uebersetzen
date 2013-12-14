@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 177
+    .line 169
     iput-object p1, p0, Lcom/koushikdutta/superuser/MainActivity$3;->this$0:Lcom/koushikdutta/superuser/MainActivity;
 
     iput-object p2, p0, Lcom/koushikdutta/superuser/MainActivity$3;->val$dlg:Landroid/app/ProgressDialog;
@@ -43,10 +43,10 @@
     .locals 11
 
     .prologue
-    .line 179
+    .line 171
     const/4 v0, 0x0
 
-    .line 181
+    .line 173
     .local v0, _error:Z
     :try_start_0
     iget-object v6, p0, Lcom/koushikdutta/superuser/MainActivity$3;->this$0:Lcom/koushikdutta/superuser/MainActivity;
@@ -55,7 +55,7 @@
 
     move-result-object v5
 
-    .line 182
+    .line 174
     .local v5, su:Ljava/io/File;
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -117,7 +117,7 @@
 
     move-result-object v1
 
-    .line 196
+    .line 188
     .local v1, command:Ljava/lang/String;
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
@@ -129,7 +129,7 @@
 
     move-result-object v4
 
-    .line 197
+    .line 189
     .local v4, p:Ljava/lang/Process;
     invoke-virtual {v4}, Ljava/lang/Process;->getOutputStream()Ljava/io/OutputStream;
 
@@ -141,21 +141,21 @@
 
     invoke-virtual {v6, v7}, Ljava/io/OutputStream;->write([B)V
 
-    .line 198
+    .line 190
     invoke-virtual {v4}, Ljava/lang/Process;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object v6
 
     invoke-virtual {v6}, Ljava/io/OutputStream;->close()V
 
-    .line 199
+    .line 191
     invoke-virtual {v4}, Ljava/lang/Process;->waitFor()I
 
     move-result v6
 
     if-eqz v6, :cond_0
 
-    .line 200
+    .line 192
     new-instance v6, Ljava/lang/Exception;
 
     const-string v7, "non zero result"
@@ -166,35 +166,35 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 203
+    .line 195
     .end local v1           #command:Ljava/lang/String;
     .end local v4           #p:Ljava/lang/Process;
     .end local v5           #su:Ljava/io/File;
     :catch_0
     move-exception v3
 
-    .line 204
+    .line 196
     .local v3, ex:Ljava/lang/Exception;
     const/4 v0, 0x1
 
-    .line 205
+    .line 197
     const-string v6, "Superuser"
 
     const-string v7, "error upgrading"
 
     invoke-static {v6, v7, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 207
+    .line 199
     .end local v3           #ex:Ljava/lang/Exception;
     :goto_0
     iget-object v6, p0, Lcom/koushikdutta/superuser/MainActivity$3;->val$dlg:Landroid/app/ProgressDialog;
 
     invoke-virtual {v6}, Landroid/app/ProgressDialog;->dismiss()V
 
-    .line 208
+    .line 200
     move v2, v0
 
-    .line 209
+    .line 201
     .local v2, error:Z
     iget-object v6, p0, Lcom/koushikdutta/superuser/MainActivity$3;->this$0:Lcom/koushikdutta/superuser/MainActivity;
 
@@ -204,10 +204,10 @@
 
     invoke-virtual {v6, v7}, Lcom/koushikdutta/superuser/MainActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 225
+    .line 217
     return-void
 
-    .line 201
+    .line 193
     .end local v2           #error:Z
     .restart local v1       #command:Ljava/lang/String;
     .restart local v4       #p:Ljava/lang/Process;

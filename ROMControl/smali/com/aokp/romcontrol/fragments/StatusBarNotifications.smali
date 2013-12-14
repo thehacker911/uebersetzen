@@ -11,6 +11,8 @@
 
 .field private static final PREF_IME_SWITCHER:Ljava/lang/CharSequence; = null
 
+.field private static final PREF_NOTIFICATION_VIBRATE:Ljava/lang/CharSequence; = null
+
 .field private static final PREF_NOTIFICATION_WALLPAPER:Ljava/lang/CharSequence; = null
 
 .field private static final PREF_NOTIFICATION_WALLPAPER_ALPHA:Ljava/lang/CharSequence; = null
@@ -95,6 +97,11 @@
     sput-object v0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->PREF_STATUSBAR_BRIGHTNESS:Ljava/lang/CharSequence;
 
     .line 61
+    const-string v0, "notification"
+
+    sput-object v0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->PREF_NOTIFICATION_VIBRATE:Ljava/lang/CharSequence;
+
+    .line 62
     const-string v0, "statusbar_hidden"
 
     sput-object v0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->PREF_STATUSBAR_HIDDEN:Ljava/lang/CharSequence;
@@ -109,7 +116,7 @@
     .line 51
     invoke-direct {p0}, Lcom/aokp/romcontrol/AOKPPreferenceFragment;-><init>()V
 
-    .line 77
+    .line 78
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mCustomLabelText:Ljava/lang/String;
@@ -198,10 +205,10 @@
     .locals 11
 
     .prologue
-    .line 333
+    .line 335
     const/4 v4, 0x0
 
-    .line 334
+    .line 336
     .local v4, myWall:Landroid/graphics/drawable/Drawable;
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -211,13 +218,13 @@
 
     invoke-direct {v0, v8}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 335
+    .line 337
     .local v0, builder:Landroid/app/AlertDialog$Builder;
     const v8, 0x7f0b00c5
 
     invoke-virtual {v0, v8}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    .line 336
+    .line 338
     const v8, 0x7f0b00c6
 
     new-instance v9, Lcom/aokp/romcontrol/fragments/StatusBarNotifications$6;
@@ -226,7 +233,7 @@
 
     invoke-virtual {v0, v8, v9}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 343
+    .line 345
     const v8, 0x7f0b00c7
 
     new-instance v9, Lcom/aokp/romcontrol/fragments/StatusBarNotifications$7;
@@ -235,7 +242,7 @@
 
     invoke-virtual {v0, v8, v9}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 350
+    .line 352
     invoke-virtual {p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getActivity()Landroid/app/Activity;
 
     move-result-object v8
@@ -244,7 +251,7 @@
 
     move-result-object v2
 
-    .line 351
+    .line 353
     .local v2, inflater:Landroid/view/LayoutInflater;
     const v8, 0x7f040008
 
@@ -254,7 +261,7 @@
 
     move-result-object v3
 
-    .line 352
+    .line 354
     .local v3, layout:Landroid/view/View;
     const v8, 0x7f0a0031
 
@@ -264,7 +271,7 @@
 
     check-cast v6, Landroid/widget/ImageView;
 
-    .line 353
+    .line 355
     .local v6, wallView:Landroid/widget/ImageView;
     invoke-virtual {p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getActivity()Landroid/app/Activity;
 
@@ -278,17 +285,17 @@
 
     move-result-object v1
 
-    .line 354
+    .line 356
     .local v1, display:Landroid/view/Display;
     new-instance v5, Landroid/graphics/Point;
 
     invoke-direct {v5}, Landroid/graphics/Point;-><init>()V
 
-    .line 355
+    .line 357
     .local v5, size:Landroid/graphics/Point;
     invoke-virtual {v1, v5}, Landroid/view/Display;->getSize(Landroid/graphics/Point;)V
 
-    .line 356
+    .line 358
     new-instance v8, Landroid/widget/LinearLayout$LayoutParams;
 
     iget v9, v5, Landroid/graphics/Point;->x:I
@@ -303,7 +310,7 @@
 
     invoke-virtual {v6, v8}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 357
+    .line 359
     new-instance v7, Ljava/io/File;
 
     iget-object v8, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContext:Landroid/content/Context;
@@ -316,7 +323,7 @@
 
     invoke-direct {v7, v8, v9}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 358
+    .line 360
     .local v7, wallpaper:Ljava/io/File;
     new-instance v4, Landroid/graphics/drawable/BitmapDrawable;
 
@@ -333,17 +340,17 @@
 
     invoke-direct {v4, v8, v9}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Ljava/lang/String;)V
 
-    .line 359
+    .line 361
     .restart local v4       #myWall:Landroid/graphics/drawable/Drawable;
     invoke-virtual {v6, v4}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 360
+    .line 362
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    .line 361
+    .line 363
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
-    .line 362
+    .line 364
     return-void
 .end method
 
@@ -351,14 +358,14 @@
     .locals 3
 
     .prologue
-    .line 272
+    .line 274
     iget-object v2, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getExternalCacheDir()Ljava/io/File;
 
     move-result-object v0
 
-    .line 273
+    .line 275
     .local v0, dir:Ljava/io/File;
     new-instance v1, Ljava/io/File;
 
@@ -366,7 +373,7 @@
 
     invoke-direct {v1, v0, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 274
+    .line 276
     .local v1, wallpaper:Ljava/io/File;
     invoke-static {v1}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
 
@@ -381,7 +388,7 @@
     .prologue
     const/4 v8, 0x1
 
-    .line 289
+    .line 291
     invoke-virtual {p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
@@ -394,7 +401,7 @@
 
     move-result-object v0
 
-    .line 290
+    .line 292
     .local v0, display:Landroid/view/Display;
     invoke-virtual {p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getActivity()Landroid/app/Activity;
 
@@ -404,7 +411,7 @@
 
     move-result v5
 
-    .line 291
+    .line 293
     .local v5, width:I
     invoke-virtual {p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getActivity()Landroid/app/Activity;
 
@@ -414,7 +421,7 @@
 
     move-result v1
 
-    .line 292
+    .line 294
     .local v1, height:I
     invoke-virtual {v0}, Landroid/view/Display;->getWidth()I
 
@@ -426,7 +433,7 @@
 
     div-float v3, v6, v7
 
-    .line 293
+    .line 295
     .local v3, spotlightX:F
     invoke-virtual {v0}, Landroid/view/Display;->getHeight()I
 
@@ -438,7 +445,7 @@
 
     div-float v4, v6, v7
 
-    .line 295
+    .line 297
     .local v4, spotlightY:F
     new-instance v2, Landroid/content/Intent;
 
@@ -448,60 +455,60 @@
 
     invoke-direct {v2, v6, v7}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 296
+    .line 298
     .local v2, intent:Landroid/content/Intent;
     const-string v6, "image/*"
 
     invoke-virtual {v2, v6}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 297
+    .line 299
     const-string v6, "crop"
 
     const-string v7, "true"
 
     invoke-virtual {v2, v6, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 298
+    .line 300
     const-string v6, "scale"
 
     invoke-virtual {v2, v6, v8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 299
+    .line 301
     const-string v6, "scaleUpIfNeeded"
 
     invoke-virtual {v2, v6, v8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 300
+    .line 302
     const-string v6, "aspectX"
 
     invoke-virtual {v2, v6, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 301
+    .line 303
     const-string v6, "aspectY"
 
     invoke-virtual {v2, v6, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 302
+    .line 304
     const-string v6, "outputX"
 
     invoke-virtual {v2, v6, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 303
+    .line 305
     const-string v6, "outputY"
 
     invoke-virtual {v2, v6, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 304
+    .line 306
     const-string v6, "spotlightX"
 
     invoke-virtual {v2, v6, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;F)Landroid/content/Intent;
 
-    .line 305
+    .line 307
     const-string v6, "spotlightY"
 
     invoke-virtual {v2, v6, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;F)Landroid/content/Intent;
 
-    .line 306
+    .line 308
     const-string v6, "output"
 
     invoke-direct {p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getNotificationExternalUri()Landroid/net/Uri;
@@ -510,7 +517,7 @@
 
     invoke-virtual {v2, v6, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 308
+    .line 310
     const-string v6, "outputFormat"
 
     sget-object v7, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
@@ -521,12 +528,12 @@
 
     invoke-virtual {v2, v6, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 310
+    .line 312
     const/16 v6, 0xc9
 
     invoke-virtual {p0, v2, v6}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 311
+    .line 313
     return-void
 .end method
 
@@ -534,20 +541,20 @@
     .locals 2
 
     .prologue
-    .line 314
+    .line 316
     iget-object v0, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContext:Landroid/content/Context;
 
     const-string v1, "notification_wallpaper.jpg"
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->deleteFile(Ljava/lang/String;)Z
 
-    .line 315
+    .line 317
     invoke-virtual {p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->findWallpaperStatus()V
 
-    .line 316
+    .line 318
     invoke-static {}, Lcom/aokp/romcontrol/util/Helpers;->restartSystemUI()V
 
-    .line 317
+    .line 319
     return-void
 .end method
 
@@ -555,7 +562,7 @@
     .locals 2
 
     .prologue
-    .line 323
+    .line 325
     sget-object v0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "custom_carrier_label"
@@ -566,7 +573,7 @@
 
     iput-object v0, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mCustomLabelText:Ljava/lang/String;
 
-    .line 325
+    .line 327
     iget-object v0, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mCustomLabelText:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -579,7 +586,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 326
+    .line 328
     :cond_0
     iget-object v0, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mCustomLabel:Landroid/preference/Preference;
 
@@ -587,11 +594,11 @@
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(I)V
 
-    .line 330
+    .line 332
     :goto_0
     return-void
 
-    .line 328
+    .line 330
     :cond_1
     iget-object v0, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mCustomLabel:Landroid/preference/Preference;
 
@@ -610,7 +617,7 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 278
+    .line 280
     new-instance v0, Ljava/io/File;
 
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContext:Landroid/content/Context;
@@ -623,7 +630,7 @@
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 279
+    .line 281
     .local v0, wallpaper:Ljava/io/File;
     iget v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mUiMode:I
 
@@ -635,23 +642,23 @@
 
     if-eqz v1, :cond_0
 
-    .line 280
+    .line 282
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mWallpaperAlpha:Landroid/preference/Preference;
 
     invoke-virtual {v1, v3}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    .line 281
+    .line 283
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mWallpaperAlpha:Landroid/preference/Preference;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 286
+    .line 288
     :goto_0
     return-void
 
-    .line 283
+    .line 285
     :cond_0
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mWallpaperAlpha:Landroid/preference/Preference;
 
@@ -659,7 +666,7 @@
 
     invoke-virtual {v1, v2}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    .line 284
+    .line 286
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mWallpaperAlpha:Landroid/preference/Preference;
 
     const v2, 0x7f0b004f
@@ -676,20 +683,20 @@
     .parameter "data"
 
     .prologue
-    .line 367
+    .line 369
     const/4 v4, -0x1
 
     if-ne p2, v4, :cond_1
 
-    .line 368
+    .line 370
     const/16 v4, 0xc9
 
     if-ne p1, v4, :cond_1
 
-    .line 369
+    .line 371
     const/4 v3, 0x0
 
-    .line 371
+    .line 373
     .local v3, wallpaperStream:Ljava/io/FileOutputStream;
     :try_start_0
     iget-object v4, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContext:Landroid/content/Context;
@@ -702,12 +709,12 @@
 
     move-result-object v3
 
-    .line 373
+    .line 375
     invoke-direct {p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getNotificationExternalUri()Landroid/net/Uri;
 
     move-result-object v2
 
-    .line 374
+    .line 376
     .local v2, selectedImageUri:Landroid/net/Uri;
     invoke-virtual {v2}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
@@ -717,7 +724,7 @@
 
     move-result-object v0
 
-    .line 376
+    .line 378
     .local v0, bitmap:Landroid/graphics/Bitmap;
     sget-object v4, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
 
@@ -728,27 +735,27 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 383
+    .line 385
     if-eqz v3, :cond_0
 
-    .line 384
+    .line 386
     :try_start_1
     invoke-virtual {v3}, Ljava/io/FileOutputStream;->close()V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_2
 
-    .line 390
+    .line 392
     :cond_0
     :goto_0
     invoke-virtual {p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->findWallpaperStatus()V
 
-    .line 391
+    .line 393
     invoke-direct {p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->buildWallpaperAlert()V
 
-    .line 392
+    .line 394
     invoke-static {}, Lcom/aokp/romcontrol/util/Helpers;->restartSystemUI()V
 
-    .line 395
+    .line 397
     .end local v0           #bitmap:Landroid/graphics/Bitmap;
     .end local v2           #selectedImageUri:Landroid/net/Uri;
     .end local v3           #wallpaperStream:Ljava/io/FileOutputStream;
@@ -756,16 +763,16 @@
     :goto_1
     return-void
 
-    .line 379
+    .line 381
     .restart local v3       #wallpaperStream:Ljava/io/FileOutputStream;
     :catch_0
     move-exception v1
 
-    .line 383
+    .line 385
     .local v1, e:Ljava/io/FileNotFoundException;
     if-eqz v3, :cond_1
 
-    .line 384
+    .line 386
     :try_start_2
     invoke-virtual {v3}, Ljava/io/FileOutputStream;->close()V
     :try_end_2
@@ -773,32 +780,32 @@
 
     goto :goto_1
 
-    .line 386
+    .line 388
     :catch_1
     move-exception v4
 
     goto :goto_1
 
-    .line 382
+    .line 384
     .end local v1           #e:Ljava/io/FileNotFoundException;
     :catchall_0
     move-exception v4
 
-    .line 383
+    .line 385
     if-eqz v3, :cond_2
 
-    .line 384
+    .line 386
     :try_start_3
     invoke-virtual {v3}, Ljava/io/FileOutputStream;->close()V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 388
+    .line 390
     :cond_2
     :goto_2
     throw v4
 
-    .line 386
+    .line 388
     .restart local v0       #bitmap:Landroid/graphics/Bitmap;
     .restart local v2       #selectedImageUri:Landroid/net/Uri;
     :catch_2
@@ -825,32 +832,32 @@
 
     const/4 v4, 0x0
 
-    .line 90
+    .line 91
     invoke-super {p0, p1}, Lcom/aokp/romcontrol/AOKPPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 91
+    .line 92
     const v1, 0x7f0b001c
 
     invoke-virtual {p0, v1}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->setTitle(I)V
 
-    .line 93
+    .line 94
     const v1, 0x7f05000e
 
     invoke-virtual {p0, v1}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->addPreferencesFromResource(I)V
 
-    .line 94
+    .line 95
     invoke-virtual {p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
     sput-object v1, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContentResolver:Landroid/content/ContentResolver;
 
-    .line 97
+    .line 98
     invoke-virtual {p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    .line 98
+    .line 99
     .local v0, prefs:Landroid/preference/PreferenceScreen;
     sget-object v1, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->PREF_STATUS_BAR_NOTIF_COUNT:Ljava/lang/CharSequence;
 
@@ -862,7 +869,7 @@
 
     iput-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mStatusBarNotifCount:Landroid/preference/CheckBoxPreference;
 
-    .line 99
+    .line 100
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mStatusBarNotifCount:Landroid/preference/CheckBoxPreference;
 
     sget-object v2, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContentResolver:Landroid/content/ContentResolver;
@@ -875,7 +882,7 @@
 
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 102
+    .line 103
     sget-object v1, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->PREF_CUSTOM_CARRIER_LABEL:Ljava/lang/CharSequence;
 
     invoke-virtual {p0, v1}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -884,10 +891,10 @@
 
     iput-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mCustomLabel:Landroid/preference/Preference;
 
-    .line 103
+    .line 104
     invoke-direct {p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->updateCustomLabelTextSummary()V
 
-    .line 105
+    .line 106
     sget-object v1, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->PREF_IME_SWITCHER:Ljava/lang/CharSequence;
 
     invoke-virtual {p0, v1}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -898,7 +905,7 @@
 
     iput-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mShowImeSwitcher:Landroid/preference/CheckBoxPreference;
 
-    .line 106
+    .line 107
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mShowImeSwitcher:Landroid/preference/CheckBoxPreference;
 
     sget-object v2, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContentResolver:Landroid/content/ContentResolver;
@@ -911,7 +918,7 @@
 
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 109
+    .line 110
     sget-object v1, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->PREF_STATUSBAR_BRIGHTNESS:Ljava/lang/CharSequence;
 
     invoke-virtual {p0, v1}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -922,7 +929,7 @@
 
     iput-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mStatusbarSliderPreference:Landroid/preference/CheckBoxPreference;
 
-    .line 110
+    .line 111
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mStatusbarSliderPreference:Landroid/preference/CheckBoxPreference;
 
     sget-object v2, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContentResolver:Landroid/content/ContentResolver;
@@ -935,7 +942,7 @@
 
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 113
+    .line 114
     sget-object v1, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->PREF_NOTIFICATION_WALLPAPER:Ljava/lang/CharSequence;
 
     invoke-virtual {p0, v1}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -944,7 +951,7 @@
 
     iput-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mNotificationWallpaper:Landroid/preference/Preference;
 
-    .line 115
+    .line 116
     sget-object v1, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->PREF_NOTIFICATION_WALLPAPER_ALPHA:Ljava/lang/CharSequence;
 
     invoke-virtual {p0, v1}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -953,7 +960,7 @@
 
     iput-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mWallpaperAlpha:Landroid/preference/Preference;
 
-    .line 117
+    .line 118
     sget-object v1, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->PREF_VIBRATE_NOTIF_EXPAND:Ljava/lang/CharSequence;
 
     invoke-virtual {p0, v1}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -964,7 +971,7 @@
 
     iput-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mVibrateOnExpand:Landroid/preference/CheckBoxPreference;
 
-    .line 118
+    .line 119
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mVibrateOnExpand:Landroid/preference/CheckBoxPreference;
 
     sget-object v2, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContentResolver:Landroid/content/ContentResolver;
@@ -977,17 +984,25 @@
 
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 120
+    .line 121
     iget-boolean v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->hasVibration:Z
 
     if-nez v1, :cond_0
 
-    .line 121
-    iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mVibrateOnExpand:Landroid/preference/CheckBoxPreference;
+    .line 122
+    sget-object v1, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->PREF_NOTIFICATION_VIBRATE:Ljava/lang/CharSequence;
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {p0, v1}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    .line 124
+    move-result-object v1
+
+    check-cast v1, Landroid/preference/PreferenceGroup;
+
+    iget-object v2, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mVibrateOnExpand:Landroid/preference/CheckBoxPreference;
+
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+
+    .line 126
     :cond_0
     sget-object v1, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->PREF_STATUSBAR_HIDDEN:Ljava/lang/CharSequence;
 
@@ -999,7 +1014,7 @@
 
     iput-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mStatusBarHide:Landroid/preference/CheckBoxPreference;
 
-    .line 125
+    .line 127
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mStatusBarHide:Landroid/preference/CheckBoxPreference;
 
     sget-object v2, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContentResolver:Landroid/content/ContentResolver;
@@ -1012,7 +1027,7 @@
 
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 128
+    .line 130
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -1027,46 +1042,46 @@
 
     iput v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mUiMode:I
 
-    .line 131
+    .line 133
     iget v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mUiMode:I
 
     if-ne v1, v5, :cond_1
 
-    .line 132
+    .line 134
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mStatusbarSliderPreference:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 133
+    .line 135
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mStatusBarHide:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 134
+    .line 136
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mNotificationWallpaper:Landroid/preference/Preference;
 
     invoke-virtual {v1, v4}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    .line 135
+    .line 137
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mStatusbarSliderPreference:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v6}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 136
+    .line 138
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mStatusBarHide:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v6}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
-    .line 137
+    .line 139
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mNotificationWallpaper:Landroid/preference/Preference;
 
     invoke-virtual {v1, v6}, Landroid/preference/Preference;->setSummary(I)V
 
-    .line 139
+    .line 141
     :cond_1
     invoke-virtual {p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->findWallpaperStatus()V
 
-    .line 140
+    .line 142
     return-void
 .end method
 
@@ -1076,7 +1091,7 @@
     .parameter "newValue"
 
     .prologue
-    .line 268
+    .line 270
     const/4 v0, 0x0
 
     return v0
@@ -1088,7 +1103,7 @@
     .parameter "preference"
 
     .prologue
-    .line 145
+    .line 147
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mStatusBarNotifCount:Landroid/preference/CheckBoxPreference;
@@ -1101,7 +1116,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 146
+    .line 148
     sget-object v17, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v18, "status_bar_notif_count"
@@ -1115,14 +1130,14 @@
 
     invoke-static/range {v17 .. v19}, Landroid/provider/Settings$System;->putBoolean(Landroid/content/ContentResolver;Ljava/lang/String;Z)Z
 
-    .line 149
+    .line 151
     const/16 v17, 0x1
 
-    .line 262
+    .line 264
     :goto_0
     return v17
 
-    .line 150
+    .line 152
     .restart local p2
     :cond_0
     move-object/from16 v0, p0
@@ -1137,7 +1152,7 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 151
+    .line 153
     new-instance v16, Ljava/io/File;
 
     move-object/from16 v0, p0
@@ -1154,7 +1169,7 @@
 
     invoke-direct/range {v16 .. v18}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 152
+    .line 154
     .local v16, wallpaper:Ljava/io/File;
     invoke-virtual/range {v16 .. v16}, Ljava/io/File;->exists()Z
 
@@ -1162,22 +1177,22 @@
 
     if-eqz v17, :cond_1
 
-    .line 153
+    .line 155
     invoke-direct/range {p0 .. p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->buildWallpaperAlert()V
 
-    .line 157
+    .line 159
     :goto_1
     const/16 v17, 0x1
 
     goto :goto_0
 
-    .line 155
+    .line 157
     :cond_1
     invoke-direct/range {p0 .. p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->prepareAndSetWallpaper()V
 
     goto :goto_1
 
-    .line 158
+    .line 160
     .end local v16           #wallpaper:Ljava/io/File;
     :cond_2
     move-object/from16 v0, p0
@@ -1192,7 +1207,7 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 159
+    .line 161
     invoke-virtual/range {p0 .. p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getActivity()Landroid/app/Activity;
 
     move-result-object v17
@@ -1201,7 +1216,7 @@
 
     move-result-object v11
 
-    .line 160
+    .line 162
     .local v11, res:Landroid/content/res/Resources;
     const v17, 0x7f0b0002
 
@@ -1211,7 +1226,7 @@
 
     move-result-object v5
 
-    .line 161
+    .line 163
     .local v5, cancel:Ljava/lang/String;
     const v17, 0x7f0b0003
 
@@ -1221,7 +1236,7 @@
 
     move-result-object v10
 
-    .line 162
+    .line 164
     .local v10, ok:Ljava/lang/String;
     const v17, 0x7f0b00ca
 
@@ -1231,7 +1246,7 @@
 
     move-result-object v15
 
-    .line 163
+    .line 165
     .local v15, title:Ljava/lang/String;
     sget-object v17, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -1243,7 +1258,7 @@
 
     move-result v12
 
-    .line 166
+    .line 168
     .local v12, savedProgress:F
     invoke-virtual/range {p0 .. p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getActivity()Landroid/app/Activity;
 
@@ -1253,7 +1268,7 @@
 
     move-result-object v7
 
-    .line 167
+    .line 169
     .local v7, factory:Landroid/view/LayoutInflater;
     const v17, 0x7f04001f
 
@@ -1267,7 +1282,7 @@
 
     move-result-object v4
 
-    .line 168
+    .line 170
     .local v4, alphaDialog:Landroid/view/View;
     const v17, 0x7f0a000d
 
@@ -1279,7 +1294,7 @@
 
     check-cast v14, Landroid/widget/SeekBar;
 
-    .line 169
+    .line 171
     .local v14, seekbar:Landroid/widget/SeekBar;
     new-instance v13, Lcom/aokp/romcontrol/fragments/StatusBarNotifications$1;
 
@@ -1287,7 +1302,7 @@
 
     invoke-direct {v13, v0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications$1;-><init>(Lcom/aokp/romcontrol/fragments/StatusBarNotifications;)V
 
-    .line 184
+    .line 186
     .local v13, seekBarChangeListener:Landroid/widget/SeekBar$OnSeekBarChangeListener;
     const/high16 v17, 0x42c8
 
@@ -1303,17 +1318,17 @@
 
     invoke-virtual {v14, v0}, Landroid/widget/SeekBar;->setProgress(I)V
 
-    .line 185
+    .line 187
     const/16 v17, 0x64
 
     move/from16 v0, v17
 
     invoke-virtual {v14, v0}, Landroid/widget/SeekBar;->setMax(I)V
 
-    .line 186
+    .line 188
     invoke-virtual {v14, v13}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
-    .line 187
+    .line 189
     new-instance v17, Landroid/app/AlertDialog$Builder;
 
     invoke-virtual/range {p0 .. p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getActivity()Landroid/app/Activity;
@@ -1372,12 +1387,12 @@
 
     invoke-virtual/range {v17 .. v17}, Landroid/app/AlertDialog;->show()V
 
-    .line 207
+    .line 209
     const/16 v17, 0x1
 
     goto/16 :goto_0
 
-    .line 208
+    .line 210
     .end local v4           #alphaDialog:Landroid/view/View;
     .end local v5           #cancel:Ljava/lang/String;
     .end local v7           #factory:Landroid/view/LayoutInflater;
@@ -1400,7 +1415,7 @@
 
     if-ne v0, v1, :cond_4
 
-    .line 209
+    .line 211
     sget-object v17, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v18, "show_statusbar_ime_switcher"
@@ -1415,12 +1430,12 @@
 
     invoke-static/range {v17 .. v19}, Landroid/provider/Settings$System;->putBoolean(Landroid/content/ContentResolver;Ljava/lang/String;Z)Z
 
-    .line 212
+    .line 214
     const/16 v17, 0x1
 
     goto/16 :goto_0
 
-    .line 213
+    .line 215
     :cond_4
     move-object/from16 v0, p0
 
@@ -1434,7 +1449,7 @@
 
     if-ne v0, v1, :cond_5
 
-    .line 214
+    .line 216
     sget-object v17, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v18, "statusbar_brightness_slider"
@@ -1449,12 +1464,12 @@
 
     invoke-static/range {v17 .. v19}, Landroid/provider/Settings$System;->putBoolean(Landroid/content/ContentResolver;Ljava/lang/String;Z)Z
 
-    .line 217
+    .line 219
     const/16 v17, 0x1
 
     goto/16 :goto_0
 
-    .line 218
+    .line 220
     :cond_5
     move-object/from16 v0, p0
 
@@ -1468,7 +1483,7 @@
 
     if-ne v0, v1, :cond_8
 
-    .line 219
+    .line 221
     new-instance v3, Landroid/app/AlertDialog$Builder;
 
     invoke-virtual/range {p0 .. p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getActivity()Landroid/app/Activity;
@@ -1479,7 +1494,7 @@
 
     invoke-direct {v3, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 220
+    .line 222
     .local v3, alert:Landroid/app/AlertDialog$Builder;
     const v17, 0x7f0b00cb
 
@@ -1487,14 +1502,14 @@
 
     invoke-virtual {v3, v0}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    .line 221
+    .line 223
     const v17, 0x7f0b00cc
 
     move/from16 v0, v17
 
     invoke-virtual {v3, v0}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    .line 224
+    .line 226
     new-instance v9, Landroid/widget/EditText;
 
     invoke-virtual/range {p0 .. p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getActivity()Landroid/app/Activity;
@@ -1505,7 +1520,7 @@
 
     invoke-direct {v9, v0}, Landroid/widget/EditText;-><init>(Landroid/content/Context;)V
 
-    .line 225
+    .line 227
     .local v9, input:Landroid/widget/EditText;
     const/16 v17, 0x1
 
@@ -1513,7 +1528,7 @@
 
     new-array v8, v0, [Landroid/text/InputFilter;
 
-    .line 226
+    .line 228
     .local v8, filter:[Landroid/text/InputFilter;
     const/16 v17, 0x0
 
@@ -1525,10 +1540,10 @@
 
     aput-object v18, v8, v17
 
-    .line 228
+    .line 230
     invoke-virtual {v9, v8}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
-    .line 229
+    .line 231
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mCustomLabelText:Ljava/lang/String;
@@ -1548,10 +1563,10 @@
 
     invoke-virtual {v9, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 230
+    .line 232
     invoke-virtual {v3, v9}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    .line 231
+    .line 233
     invoke-virtual/range {p0 .. p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getResources()Landroid/content/res/Resources;
 
     move-result-object v17
@@ -1576,7 +1591,7 @@
 
     invoke-virtual {v3, v0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 243
+    .line 245
     invoke-virtual/range {p0 .. p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getResources()Landroid/content/res/Resources;
 
     move-result-object v17
@@ -1601,10 +1616,10 @@
 
     invoke-virtual {v3, v0, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 249
+    .line 251
     invoke-virtual {v3}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
-    .line 262
+    .line 264
     .end local v3           #alert:Landroid/app/AlertDialog$Builder;
     .end local v8           #filter:[Landroid/text/InputFilter;
     .end local v9           #input:Landroid/widget/EditText;
@@ -1615,7 +1630,7 @@
 
     goto/16 :goto_0
 
-    .line 229
+    .line 231
     .restart local v3       #alert:Landroid/app/AlertDialog$Builder;
     .restart local v8       #filter:[Landroid/text/InputFilter;
     .restart local v9       #input:Landroid/widget/EditText;
@@ -1624,7 +1639,7 @@
 
     goto :goto_2
 
-    .line 250
+    .line 252
     .end local v3           #alert:Landroid/app/AlertDialog$Builder;
     .end local v8           #filter:[Landroid/text/InputFilter;
     .end local v9           #input:Landroid/widget/EditText;
@@ -1641,7 +1656,7 @@
 
     if-ne v0, v1, :cond_9
 
-    .line 251
+    .line 253
     sget-object v17, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v18, "vibrate_notif_expand"
@@ -1655,15 +1670,15 @@
 
     invoke-static/range {v17 .. v19}, Landroid/provider/Settings$System;->putBoolean(Landroid/content/ContentResolver;Ljava/lang/String;Z)Z
 
-    .line 254
+    .line 256
     invoke-static {}, Lcom/aokp/romcontrol/util/Helpers;->restartSystemUI()V
 
-    .line 255
+    .line 257
     const/16 v17, 0x1
 
     goto/16 :goto_0
 
-    .line 256
+    .line 258
     .restart local p2
     :cond_9
     move-object/from16 v0, p0
@@ -1678,7 +1693,7 @@
 
     if-ne v0, v1, :cond_6
 
-    .line 257
+    .line 259
     check-cast p2, Landroid/preference/CheckBoxPreference;
 
     .end local p2
@@ -1686,7 +1701,7 @@
 
     move-result v6
 
-    .line 258
+    .line 260
     .local v6, checked:Z
     invoke-virtual/range {p0 .. p0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->getActivity()Landroid/app/Activity;
 
@@ -1711,12 +1726,12 @@
 
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putBoolean(Landroid/content/ContentResolver;Ljava/lang/String;Z)Z
 
-    .line 260
+    .line 262
     const/16 v17, 0x1
 
     goto/16 :goto_0
 
-    .line 258
+    .line 260
     :cond_a
     const/16 v17, 0x0
 

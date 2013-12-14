@@ -441,7 +441,7 @@
     invoke-virtual {v1, v3, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
     .line 184
-    const v3, 0x7f0d0262
+    const v3, 0x7f0d025f
 
     invoke-interface {p1, v3}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -456,7 +456,7 @@
     invoke-interface {v0, v3}, Landroid/view/MenuItem;->setOnMenuItemClickListener(Landroid/view/MenuItem$OnMenuItemClickListener;)Landroid/view/MenuItem;
 
     .line 193
-    const v3, 0x7f0d0263
+    const v3, 0x7f0d0260
 
     invoke-interface {p1, v3}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 

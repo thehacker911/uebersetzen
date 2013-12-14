@@ -837,7 +837,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0d0267
+    .packed-switch 0x7f0d0264
         :pswitch_0
     .end packed-switch
 .end method
@@ -1048,7 +1048,7 @@
 
     .prologue
     .line 177
-    const v3, 0x7f0d0267
+    const v3, 0x7f0d0264
 
     invoke-interface {p1, v3}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 

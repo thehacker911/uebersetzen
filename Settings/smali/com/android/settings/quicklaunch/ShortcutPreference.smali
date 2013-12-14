@@ -136,7 +136,7 @@
     iput-char p2, p0, Lcom/android/settings/quicklaunch/ShortcutPreference;->mShortcut:C
 
     .line 67
-    const v1, 0x7f040087
+    const v1, 0x7f040086
 
     invoke-virtual {p0, v1}, Lcom/android/settings/quicklaunch/ShortcutPreference;->setWidgetLayoutResource(I)V
 
@@ -322,7 +322,7 @@
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
     .line 106
-    const v4, 0x7f0d0135
+    const v4, 0x7f0d0132
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -74,7 +74,7 @@
     iput-object v0, p0, Lcom/android/settings/applications/RunningProcessesView$ViewHolder;->description:Landroid/widget/TextView;
 
     .line 162
-    const v0, 0x7f0d016e
+    const v0, 0x7f0d016b
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

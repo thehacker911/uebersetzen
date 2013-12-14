@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 196
+    .line 198
     iput-object p1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications$2;->this$0:Lcom/aokp/romcontrol/fragments/StatusBarNotifications;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .parameter "which"
 
     .prologue
-    .line 199
+    .line 201
     iget-object v1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications$2;->this$0:Lcom/aokp/romcontrol/fragments/StatusBarNotifications;
 
     #getter for: Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mSeekbarProgress:I
@@ -57,7 +57,7 @@
 
     div-float v0, v1, v2
 
-    .line 200
+    .line 202
     .local v0, val:F
     invoke-static {}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->access$100()Landroid/content/ContentResolver;
 
@@ -67,9 +67,9 @@
 
     invoke-static {v1, v2, v0}, Landroid/provider/Settings$System;->putFloat(Landroid/content/ContentResolver;Ljava/lang/String;F)Z
 
-    .line 202
+    .line 204
     invoke-static {}, Lcom/aokp/romcontrol/util/Helpers;->restartSystemUI()V
 
-    .line 203
+    .line 205
     return-void
 .end method

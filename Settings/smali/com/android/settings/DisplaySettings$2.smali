@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 243
+    .line 274
     iput-object p1, p0, Lcom/android/settings/DisplaySettings$2;->this$0:Lcom/android/settings/DisplaySettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,16 +41,16 @@
     .locals 1
 
     .prologue
-    .line 245
+    .line 276
     iget-object v0, p0, Lcom/android/settings/DisplaySettings$2;->this$0:Lcom/android/settings/DisplaySettings;
 
-    #getter for: Lcom/android/settings/DisplaySettings;->mFontSizePref:Lcom/android/settings/FontDialogPreference;
-    invoke-static {v0}, Lcom/android/settings/DisplaySettings;->access$100(Lcom/android/settings/DisplaySettings;)Lcom/android/settings/FontDialogPreference;
+    #getter for: Lcom/android/settings/DisplaySettings;->mFontSizePref:Lcom/android/settings/WarnedListPreference;
+    invoke-static {v0}, Lcom/android/settings/DisplaySettings;->access$100(Lcom/android/settings/DisplaySettings;)Lcom/android/settings/WarnedListPreference;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/FontDialogPreference;->click()V
+    invoke-virtual {v0}, Lcom/android/settings/WarnedListPreference;->click()V
 
-    .line 246
+    .line 277
     return-void
 .end method

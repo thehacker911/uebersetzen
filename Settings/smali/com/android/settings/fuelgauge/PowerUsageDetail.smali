@@ -710,7 +710,7 @@
 
     iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
-    const v14, 0x7f0d01a3
+    const v14, 0x7f0d01a0
 
     invoke-virtual {v13, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -727,7 +727,7 @@
 
     iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
-    const v14, 0x7f0d01a4
+    const v14, 0x7f0d01a1
 
     invoke-virtual {v13, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

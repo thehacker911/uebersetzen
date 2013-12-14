@@ -30,7 +30,7 @@
     .parameter
 
     .prologue
-    .line 232
+    .line 234
     iput-object p1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications$4;->this$0:Lcom/aokp/romcontrol/fragments/StatusBarNotifications;
 
     iput-object p2, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications$4;->val$input:Landroid/widget/EditText;
@@ -48,7 +48,7 @@
     .parameter "whichButton"
 
     .prologue
-    .line 234
+    .line 236
     iget-object v2, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications$4;->val$input:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -59,7 +59,7 @@
 
     move-result-object v1
 
-    .line 235
+    .line 237
     .local v1, value:Ljava/lang/String;
     invoke-static {}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->access$100()Landroid/content/ContentResolver;
 
@@ -69,24 +69,24 @@
 
     invoke-static {v2, v3, v1}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 237
+    .line 239
     iget-object v2, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications$4;->this$0:Lcom/aokp/romcontrol/fragments/StatusBarNotifications;
 
     #calls: Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->updateCustomLabelTextSummary()V
     invoke-static {v2}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->access$200(Lcom/aokp/romcontrol/fragments/StatusBarNotifications;)V
 
-    .line 238
+    .line 240
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 239
+    .line 241
     .local v0, i:Landroid/content/Intent;
     const-string v2, "com.aokp.romcontrol.LABEL_CHANGED"
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 240
+    .line 242
     iget-object v2, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications$4;->this$0:Lcom/aokp/romcontrol/fragments/StatusBarNotifications;
 
     #getter for: Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->mContext:Landroid/content/Context;
@@ -96,6 +96,6 @@
 
     invoke-virtual {v2, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 241
+    .line 243
     return-void
 .end method

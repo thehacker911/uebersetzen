@@ -631,7 +631,7 @@
     invoke-virtual {v1, v10, v4, v6}, Landroid/app/AlertDialog$Builder;->setMultiChoiceItems([Ljava/lang/CharSequence;[ZLandroid/content/DialogInterface$OnMultiChoiceClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 519
-    const v4, 0x7f04008e
+    const v4, 0x7f04008d
 
     const/4 v6, 0x0
 
@@ -641,7 +641,7 @@
 
     .line 520
     .local v2, view:Landroid/view/View;
-    const v4, 0x7f0d0165
+    const v4, 0x7f0d0162
 
     invoke-virtual {v2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

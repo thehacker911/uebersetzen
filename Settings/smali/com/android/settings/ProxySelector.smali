@@ -109,7 +109,7 @@
 
     .prologue
     .line 141
-    const v0, 0x7f0d0139
+    const v0, 0x7f0d0136
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -127,7 +127,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 144
-    const v0, 0x7f0d013a
+    const v0, 0x7f0d0137
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -152,7 +152,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 148
-    const v0, 0x7f0d013b
+    const v0, 0x7f0d0138
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -170,7 +170,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 151
-    const v0, 0x7f0d013c
+    const v0, 0x7f0d0139
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -188,7 +188,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 154
-    const v0, 0x7f0d013d
+    const v0, 0x7f0d013a
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -206,7 +206,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 157
-    const v0, 0x7f0d013e
+    const v0, 0x7f0d013b
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -638,7 +638,7 @@
 
     .prologue
     .line 90
-    const v0, 0x7f04008b
+    const v0, 0x7f04008a
 
     const/4 v1, 0x0
 

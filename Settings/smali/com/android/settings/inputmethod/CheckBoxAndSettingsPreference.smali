@@ -26,12 +26,12 @@
     invoke-direct {p0, p1, p2}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 42
-    const v0, 0x7f04007c
+    const v0, 0x7f04007b
 
     invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/CheckBoxAndSettingsPreference;->setLayoutResource(I)V
 
     .line 43
-    const v0, 0x7f04007d
+    const v0, 0x7f04007c
 
     invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/CheckBoxAndSettingsPreference;->setWidgetLayoutResource(I)V
 
@@ -135,7 +135,7 @@
     invoke-super {p0, p1}, Landroid/preference/CheckBoxPreference;->onBindView(Landroid/view/View;)V
 
     .line 49
-    const v1, 0x7f0d011e
+    const v1, 0x7f0d011b
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -150,7 +150,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 58
-    const v1, 0x7f0d011f
+    const v1, 0x7f0d011c
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 156
+    .line 148
     iput-object p1, p0, Lcom/koushikdutta/superuser/MainActivity$2$1;->this$1:Lcom/koushikdutta/superuser/MainActivity$2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 159
+    .line 151
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     iget-object v1, p0, Lcom/koushikdutta/superuser/MainActivity$2$1;->this$1:Lcom/koushikdutta/superuser/MainActivity$2;
@@ -50,7 +50,7 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 160
+    .line 152
     .local v0, builder:Landroid/app/AlertDialog$Builder;
     const v1, 0x104000a
 
@@ -58,23 +58,23 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 161
+    .line 153
     const v1, 0x7f080046
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    .line 162
+    .line 154
     const v1, 0x7f080048
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    .line 163
+    .line 155
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v1
 
     invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
-    .line 164
+    .line 156
     return-void
 .end method

@@ -95,7 +95,7 @@
     iput-object v0, p0, Lcom/android/settings/wifi/AccessPoint;->pskType:Lcom/android/settings/wifi/AccessPoint$PskType;
 
     .line 154
-    const v0, 0x7f040089
+    const v0, 0x7f040088
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AccessPoint;->setWidgetLayoutResource(I)V
 
@@ -132,7 +132,7 @@
     iput-object v0, p0, Lcom/android/settings/wifi/AccessPoint;->pskType:Lcom/android/settings/wifi/AccessPoint$PskType;
 
     .line 147
-    const v0, 0x7f040089
+    const v0, 0x7f040088
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AccessPoint;->setWidgetLayoutResource(I)V
 
@@ -169,7 +169,7 @@
     iput-object v0, p0, Lcom/android/settings/wifi/AccessPoint;->pskType:Lcom/android/settings/wifi/AccessPoint$PskType;
 
     .line 161
-    const v0, 0x7f040089
+    const v0, 0x7f040088
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AccessPoint;->setWidgetLayoutResource(I)V
 
@@ -1514,7 +1514,7 @@
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
     .line 215
-    const v1, 0x7f0d0138
+    const v1, 0x7f0d0135
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

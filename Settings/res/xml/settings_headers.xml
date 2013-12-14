@@ -13,6 +13,12 @@
     <header android:icon="@drawable/ic_settings_rom_control" android:id="@id/rom_control" android:title="@string/rom_control_title">
         <intent android:targetPackage="com.aokp.romcontrol" android:action="android.intent.action.MAIN" android:targetClass="com.aokp.romcontrol.ROMControlActivity" />
     </header>
+	<header android:icon="@drawable/ic_settings_toggle_control" android:id="@id/toggle_control" android:title="@string/toggle_control_title">
+        <intent android:targetPackage="de.j4velin.notificationToggle" android:action="android.intent.action.MAIN" android:targetClass="de.j4velin.notificationToggle.settings.Main" />
+    </header>
+	<header android:icon="@drawable/ic_settings_app" android:id="@id/app_drawer" android:title="@string/app_drawer_title">
+        <intent android:targetPackage="JakedUp.AppDrawer" android:action="android.intent.action.MAIN" android:targetClass="JakedUp.AppDrawer.Main" />
+    </header>
     <header android:icon="@drawable/ic_settings_themes" android:id="@id/themes" android:title="@string/themes_title">
         <intent android:targetPackage="com.tmobile.themechooser" android:action="android.intent.action.MAIN" android:targetClass="com.tmobile.themechooser.ThemeChooser" />
     </header>

@@ -1492,7 +1492,7 @@
     .line 458
     iget-object v0, p0, Lcom/android/settings/AccessibilitySettings;->mNoServicesMessagePreference:Landroid/preference/Preference;
 
-    const v1, 0x7f0400a1
+    const v1, 0x7f0400a0
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setLayoutResource(I)V
 

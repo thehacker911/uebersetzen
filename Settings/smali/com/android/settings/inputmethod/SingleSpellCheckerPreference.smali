@@ -94,7 +94,7 @@
     iput-object p4, p0, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->mTsm:Landroid/view/textservice/TextServicesManager;
 
     .line 66
-    const v1, 0x7f040083
+    const v1, 0x7f040082
 
     invoke-virtual {p0, v1}, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->setLayoutResource(I)V
 
@@ -642,7 +642,7 @@
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
     .line 81
-    const v0, 0x7f0d0123
+    const v0, 0x7f0d0120
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -651,7 +651,7 @@
     iput-object v0, p0, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->mPrefAll:Landroid/view/View;
 
     .line 82
-    const v0, 0x7f0d0125
+    const v0, 0x7f0d0122
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -662,7 +662,7 @@
     iput-object v0, p0, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->mRadioButton:Landroid/widget/RadioButton;
 
     .line 83
-    const v0, 0x7f0d0124
+    const v0, 0x7f0d0121
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -702,7 +702,7 @@
     iput-object v0, p0, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->mSummaryText:Landroid/widget/TextView;
 
     .line 93
-    const v0, 0x7f0d0128
+    const v0, 0x7f0d0125
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -722,7 +722,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 101
-    const v0, 0x7f0d0126
+    const v0, 0x7f0d0123
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

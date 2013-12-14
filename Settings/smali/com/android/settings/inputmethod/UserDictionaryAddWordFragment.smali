@@ -50,7 +50,7 @@
     .local v2, localesList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;>;"
     iget-object v3, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mRootView:Landroid/view/View;
 
-    const v4, 0x7f0d01b1
+    const v4, 0x7f0d01ae
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -146,7 +146,7 @@
 
     .prologue
     .line 61
-    const v0, 0x7f0400ad
+    const v0, 0x7f0400ac
 
     const/4 v1, 0x0
 

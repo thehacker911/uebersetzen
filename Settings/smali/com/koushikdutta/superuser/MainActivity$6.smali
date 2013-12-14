@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 265
+    .line 257
     iput-object p1, p0, Lcom/koushikdutta/superuser/MainActivity$6;->this$0:Lcom/koushikdutta/superuser/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,12 +43,12 @@
     .parameter "which"
 
     .prologue
-    .line 268
+    .line 260
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 269
+    .line 261
     .local v0, i:Landroid/content/Intent;
     const-string v1, "market://details?id=com.koushikdutta.superuser"
 
@@ -58,11 +58,11 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 270
+    .line 262
     iget-object v1, p0, Lcom/koushikdutta/superuser/MainActivity$6;->this$0:Lcom/koushikdutta/superuser/MainActivity;
 
     invoke-virtual {v1, v0}, Lcom/koushikdutta/superuser/MainActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 271
+    .line 263
     return-void
 .end method

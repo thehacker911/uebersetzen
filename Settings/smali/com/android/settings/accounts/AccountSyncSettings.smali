@@ -1525,7 +1525,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 170
-    const v0, 0x7f0d018d
+    const v0, 0x7f0d018a
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1536,7 +1536,7 @@
     iput-object v0, p0, Lcom/android/settings/accounts/AccountSyncSettings;->mUserId:Landroid/widget/TextView;
 
     .line 171
-    const v0, 0x7f0d018e
+    const v0, 0x7f0d018b
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1547,7 +1547,7 @@
     iput-object v0, p0, Lcom/android/settings/accounts/AccountSyncSettings;->mProviderId:Landroid/widget/TextView;
 
     .line 172
-    const v0, 0x7f0d018c
+    const v0, 0x7f0d0189
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

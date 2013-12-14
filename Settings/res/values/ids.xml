@@ -267,9 +267,6 @@
     <item type="id" name="automatic_mode">false</item>
     <item type="id" name="automatic_sensitivity_title">false</item>
     <item type="id" name="automatic_sensitivity">false</item>
-    <item type="id" name="container">false</item>
-    <item type="id" name="percentage">false</item>
-    <item type="id" name="font_size">false</item>
     <item type="id" name="media_mute_button">false</item>
     <item type="id" name="media_volume_seekbar">false</item>
     <item type="id" name="ringer_section">false</item>
@@ -569,6 +566,8 @@
     <item type="id" name="wireless_settings">false</item>
     <item type="id" name="quick_links">false</item>
     <item type="id" name="rom_control">false</item>
+	<item type="id" name="toggle_control">false</item>
+	<item type="id" name="app_drawer">false</item>
     <item type="id" name="themes">false</item>
     <item type="id" name="advanced_settings">false</item>
     <item type="id" name="ussd_dialer">false</item>

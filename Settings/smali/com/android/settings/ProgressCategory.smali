@@ -30,7 +30,7 @@
     iput-boolean v0, p0, Lcom/android/settings/ProgressCategory;->mProgress:Z
 
     .line 34
-    const v0, 0x7f040080
+    const v0, 0x7f04007f
 
     invoke-virtual {p0, v0}, Lcom/android/settings/ProgressCategory;->setLayoutResource(I)V
 
@@ -56,7 +56,7 @@
     invoke-super {p0, p1}, Lcom/android/settings/ProgressCategoryBase;->onBindView(Landroid/view/View;)V
 
     .line 41
-    const v4, 0x7f0d0121
+    const v4, 0x7f0d011e
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -164,7 +164,7 @@
     .line 56
     iget-object v4, p0, Lcom/android/settings/ProgressCategory;->mNoDeviceFoundPreference:Landroid/preference/Preference;
 
-    const v5, 0x7f040078
+    const v5, 0x7f040077
 
     invoke-virtual {v4, v5}, Landroid/preference/Preference;->setLayoutResource(I)V
 

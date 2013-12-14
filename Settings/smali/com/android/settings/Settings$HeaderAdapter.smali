@@ -130,7 +130,7 @@
     :cond_0
     iget-wide v0, p0, Landroid/preference/PreferenceActivity$Header;->id:J
 
-    const-wide/32 v2, 0x7f0d0234
+    const-wide/32 v2, 0x7f0d0231
 
     cmp-long v0, v0, v2
 
@@ -138,7 +138,7 @@
 
     iget-wide v0, p0, Landroid/preference/PreferenceActivity$Header;->id:J
 
-    const-wide/32 v2, 0x7f0d0235
+    const-wide/32 v2, 0x7f0d0232
 
     cmp-long v0, v0, v2
 
@@ -270,7 +270,7 @@
     :pswitch_1
     iget-object v8, p0, Lcom/android/settings/Settings$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v9, 0x7f04007a
+    const v9, 0x7f040079
 
     const/4 v10, 0x0
 
@@ -328,7 +328,7 @@
     :pswitch_2
     iget-object v8, p0, Lcom/android/settings/Settings$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v9, 0x7f040079
+    const v9, 0x7f040078
 
     const/4 v10, 0x0
 
@@ -410,7 +410,7 @@
     :pswitch_4
     iget-wide v8, v1, Landroid/preference/PreferenceActivity$Header;->id:J
 
-    const-wide/32 v10, 0x7f0d0234
+    const-wide/32 v10, 0x7f0d0231
 
     cmp-long v8, v8, v10
 

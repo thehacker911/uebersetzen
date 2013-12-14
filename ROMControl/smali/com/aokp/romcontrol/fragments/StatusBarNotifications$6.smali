@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 337
+    .line 339
     iput-object p1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications$6;->this$0:Lcom/aokp/romcontrol/fragments/StatusBarNotifications;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,12 +43,12 @@
     .parameter "which"
 
     .prologue
-    .line 340
+    .line 342
     iget-object v0, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications$6;->this$0:Lcom/aokp/romcontrol/fragments/StatusBarNotifications;
 
     #calls: Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->prepareAndSetWallpaper()V
     invoke-static {v0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->access$400(Lcom/aokp/romcontrol/fragments/StatusBarNotifications;)V
 
-    .line 341
+    .line 343
     return-void
 .end method

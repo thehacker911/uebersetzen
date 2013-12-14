@@ -579,7 +579,7 @@
     if-eqz p2, :cond_1
 
     .line 272
-    const v1, 0x7f0400bc
+    const v1, 0x7f0400bb
 
     invoke-virtual {v0, v1}, Lcom/android/settings/wfd/WifiDisplaySettings$WifiDisplayPreference;->setWidgetLayoutResource(I)V
 
@@ -738,7 +738,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0400bb
+    const v6, 0x7f0400ba
 
     const/4 v7, 0x0
 

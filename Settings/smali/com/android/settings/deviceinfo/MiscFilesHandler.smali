@@ -135,7 +135,7 @@
     iput-object v1, p0, Lcom/android/settings/deviceinfo/MiscFilesHandler;->mInflater:Landroid/view/LayoutInflater;
 
     .line 73
-    const v1, 0x7f04009d
+    const v1, 0x7f04009c
 
     invoke-virtual {p0, v1}, Lcom/android/settings/deviceinfo/MiscFilesHandler;->setContentView(I)V
 

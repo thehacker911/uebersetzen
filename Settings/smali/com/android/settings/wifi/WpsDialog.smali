@@ -367,7 +367,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0400c1
+    const v1, 0x7f0400c0
 
     const/4 v2, 0x0
 
@@ -380,7 +380,7 @@
     .line 137
     iget-object v0, p0, Lcom/android/settings/wifi/WpsDialog;->mView:Landroid/view/View;
 
-    const v1, 0x7f0d022f
+    const v1, 0x7f0d022c
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -400,7 +400,7 @@
     .line 140
     iget-object v0, p0, Lcom/android/settings/wifi/WpsDialog;->mView:Landroid/view/View;
 
-    const v1, 0x7f0d0230
+    const v1, 0x7f0d022d
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -427,7 +427,7 @@
     .line 144
     iget-object v0, p0, Lcom/android/settings/wifi/WpsDialog;->mView:Landroid/view/View;
 
-    const v1, 0x7f0d0231
+    const v1, 0x7f0d022e
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -447,7 +447,7 @@
     .line 147
     iget-object v0, p0, Lcom/android/settings/wifi/WpsDialog;->mView:Landroid/view/View;
 
-    const v1, 0x7f0d0232
+    const v1, 0x7f0d022f
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

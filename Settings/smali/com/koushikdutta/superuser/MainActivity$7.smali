@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 292
+    .line 284
     iput-object p1, p0, Lcom/koushikdutta/superuser/MainActivity$7;->this$0:Lcom/koushikdutta/superuser/MainActivity;
 
     iput-object p2, p0, Lcom/koushikdutta/superuser/MainActivity$7;->val$dlg:Landroid/app/ProgressDialog;
@@ -43,10 +43,10 @@
     .locals 5
 
     .prologue
-    .line 294
+    .line 286
     const/4 v0, 0x0
 
-    .line 296
+    .line 288
     .local v0, _error:Z
     :try_start_0
     iget-object v3, p0, Lcom/koushikdutta/superuser/MainActivity$7;->this$0:Lcom/koushikdutta/superuser/MainActivity;
@@ -55,17 +55,17 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 302
+    .line 294
     :goto_0
     move v2, v0
 
-    .line 303
+    .line 295
     .local v2, error:Z
     iget-object v3, p0, Lcom/koushikdutta/superuser/MainActivity$7;->val$dlg:Landroid/app/ProgressDialog;
 
     invoke-virtual {v3}, Landroid/app/ProgressDialog;->dismiss()V
 
-    .line 304
+    .line 296
     iget-object v3, p0, Lcom/koushikdutta/superuser/MainActivity$7;->this$0:Lcom/koushikdutta/superuser/MainActivity;
 
     new-instance v4, Lcom/koushikdutta/superuser/MainActivity$7$1;
@@ -74,19 +74,19 @@
 
     invoke-virtual {v3, v4}, Lcom/koushikdutta/superuser/MainActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 315
+    .line 307
     return-void
 
-    .line 298
+    .line 290
     .end local v2           #error:Z
     :catch_0
     move-exception v1
 
-    .line 299
+    .line 291
     .local v1, e:Ljava/lang/Exception;
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 300
+    .line 292
     const/4 v0, 0x1
 
     goto :goto_0

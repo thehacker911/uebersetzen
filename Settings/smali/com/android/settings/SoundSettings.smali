@@ -242,9 +242,9 @@
     .prologue
     const/4 v6, -0x1
 
-    const/4 v5, 0x0
-
     const/4 v4, 0x1
+
+    const/4 v5, 0x0
 
     .line 509
     iget-object v3, p0, Lcom/android/settings/SoundSettings;->mDockAudioSettings:Landroid/preference/Preference;
@@ -339,7 +339,7 @@
     .line 533
     const-string v3, "dock_audio_media_enabled"
 
-    invoke-static {v2, v3, v4}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v2, v3, v5}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 536
     :cond_3
@@ -363,7 +363,7 @@
 
     const-string v6, "dock_audio_media_enabled"
 
-    invoke-static {v2, v6, v4}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v2, v6, v5}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v6
 
@@ -1914,9 +1914,9 @@
     .parameter
 
     .prologue
-    const/4 v2, 0x0
-
     const/4 v1, 0x1
+
+    const/4 v2, 0x0
 
     .line 385
     iget-object v0, p0, Lcom/android/settings/SoundSettings;->mVibrateWhenRinging:Landroid/preference/CheckBoxPreference;
@@ -2287,7 +2287,7 @@
 
     const-string v6, "dock_audio_media_enabled"
 
-    invoke-static {v5, v6, v1}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v5, v6, v2}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v5
 

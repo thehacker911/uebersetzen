@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 377
+    .line 380
     iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$6;->this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .parameter "reason"
 
     .prologue
-    .line 382
+    .line 385
     const-string v0, "WifiP2pSettings"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -65,7 +65,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 383
+    .line 386
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$6;->this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
 
     invoke-virtual {v0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
@@ -82,7 +82,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 386
+    .line 389
     return-void
 .end method
 
@@ -90,6 +90,6 @@
     .locals 0
 
     .prologue
-    .line 380
+    .line 383
     return-void
 .end method

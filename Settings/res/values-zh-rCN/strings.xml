@@ -456,8 +456,6 @@ android.permission.ACCESS_SUPERUSER
     <string name="bluetooth_settings_summary">管理连接、设置设备名称和可检测性</string>
     <string name="bluetooth_pairing_request">蓝牙配对请求</string>
     <string name="bluetooth_enter_pin_msg">要与 &lt;br>&lt;b>%1$s&lt;/b>&lt;br>&lt;br> 设备配对，请键入该设备所需的 PIN：</string>
-    <string name="bluetooth_enter_pin_msg_hs">"
-PIN类型要与 \"%1$s\"配对。[高安全性：需要16位长度的字符密钥]"</string>
     <string name="bluetooth_enter_passkey_msg">要与 &lt;br>&lt;b>%1$s&lt;/b>&lt;br>&lt;br> 设备配对，请键入该设备所需的配对密钥：</string>
     <string name="bluetooth_enable_alphanumeric_pin">PIN 由字母或符号组成</string>
     <string name="bluetooth_pin_values_hint">通常为 0000 或 1234</string>
@@ -496,8 +494,6 @@ PIN类型要与 \"%1$s\"配对。[高安全性：需要16位长度的字符密�
     <string name="bluetooth_profile_hid">输入设备</string>
     <string name="bluetooth_profile_pan">互联网访问</string>
     <string name="bluetooth_profile_pan_nap">互联网连接共享</string>
-    <string name="bluetooth_profile_sap">SIM访问</string>
-    <string name="bluetooth_profile_dun">拨号网络访问</string>
     <string name="bluetooth_disconnect_a2dp_profile">%1$s将与媒体音频断开连接。</string>
     <string name="bluetooth_disconnect_headset_profile">%1$s将与免提音频断开连接。</string>
     <string name="bluetooth_disconnect_hid_profile">%1$s将与输入设备断开连接。</string>
@@ -512,8 +508,6 @@ PIN类型要与 \"%1$s\"配对。[高安全性：需要16位长度的字符密�
     <string name="bluetooth_a2dp_profile_summary_connected">已连接到媒体音频</string>
     <string name="bluetooth_headset_profile_summary_connected">已连接到手机音频</string>
     <string name="bluetooth_opp_profile_summary_connected">已连接到文件传输服务器</string>
-    <string name="bluetooth_sap_profile_summary_connected">已连接到SIM访问服务器</string>
-    <string name="bluetooth_dun_profile_summary_connected">已连接到拨号网络服务器</string>
     <string name="bluetooth_opp_profile_summary_not_connected">未连接到文件传输服务器</string>
     <string name="bluetooth_hid_profile_summary_connected">已连接到输入设备</string>
     <string name="bluetooth_pan_user_profile_summary_connected">连接到设备以访问互联网</string>
@@ -521,8 +515,6 @@ PIN类型要与 \"%1$s\"配对。[高安全性：需要16位长度的字符密�
     <string name="bluetooth_a2dp_profile_summary_use_for">用于媒体音频</string>
     <string name="bluetooth_headset_profile_summary_use_for">用于手机音频</string>
     <string name="bluetooth_opp_profile_summary_use_for">用于文件传输</string>
-    <string name="bluetooth_sap_profile_summary_use_for">用于SIM访问</string>
-    <string name="bluetooth_dun_profile_summary_use_for">用于访问拨号网络</string>
     <string name="bluetooth_hid_profile_summary_use_for">用于输入</string>
     <string name="bluetooth_pan_profile_summary_use_for">用于访问互联网</string>
     <string name="bluetooth_dock_settings">基座设置</string>
@@ -788,9 +780,9 @@ PIN类型要与 \"%1$s\"配对。[高安全性：需要16位长度的字符密�
     <string name="automatic_brightness">自动调整亮度</string>
     <string name="title_font_size">字体大小</string>
     <string name="dialog_title_font_size">字体大小</string>
-    <string name="sim_lock_settings">SIM/RUIM 卡锁定设置</string>
-    <string name="sim_lock_settings_category">设置 SIM/RUIM 卡锁定</string>
-    <string name="sim_lock_settings_title">SIM/RUIM 卡锁定</string>
+    <string name="sim_lock_settings">SIM 卡锁定设置</string>
+    <string name="sim_lock_settings_category">设置 SIM 卡锁定</string>
+    <string name="sim_lock_settings_title">SIM 卡锁定</string>
     <string name="sim_pin_toggle">锁定 SIM 卡</string>
     <string name="sim_lock_on">需要输入 PIN 才能使用手机</string>
     <string name="sim_lock_off">需要输入 PIN 才能使用手机</string>
@@ -804,7 +796,6 @@ PIN类型要与 \"%1$s\"配对。[高安全性：需要16位长度的字符密�
     <string name="sim_change_pin">SIM 卡 PIN</string>
     <string name="sim_bad_pin">PIN 不正确</string>
     <string name="sim_pins_dont_match">PIN 不匹配</string>
-    <string name="sim_absent">无SIM/RUIM卡</string>
     <string name="sim_change_failed">"无法更改 PIN。
 PIN 可能不正确。"</string>
     <string name="sim_change_succeeded">已成功更改 SIM 卡 PIN</string>
@@ -812,12 +803,6 @@ PIN 可能不正确。"</string>
 PIN 可能不正确。"</string>
     <string name="sim_enter_ok">确定</string>
     <string name="sim_enter_cancel">取消</string>
-    <string name="sim_pin_change_failed_enable_sim_lock">更改PIN前验证SIM/RUIM锁</string>
-    <string name="sim_enable_disable_lock_not_supported">当前SIM/RUIM不支持锁</string>
-    <string name="sim_pin_attempts">"
-剩余尝试次数："</string>
-    <string name="sim_pin_enabled">PIN 已启用</string>
-    <string name="sim_pin_disabled">PIN 已禁用</string>
     <string name="device_info_settings">手机状态</string>
     <string name="system_update_settings_list_item_title">系统更新</string>
     <string name="system_update_settings_list_item_summary" />
@@ -837,9 +822,7 @@ PIN 可能不正确。"</string>
     <string name="device_info_not_available">不可用</string>
     <string name="device_status_activity_title">状态信息</string>
     <string name="device_status">状态信息</string>
-    <string name="device_status_summary">电池状态、电量等</string>
-    <string name="device_additional_status_summary">电话号码、信号、IMEI等</string>
-    <string name="device_additional_status">其他状态信息</string>
+    <string name="device_status_summary">电话号码、信号等</string>
     <string name="storage_settings">存储</string>
     <string name="storage_settings_title">存储设置</string>
     <string name="storage_settings_summary">卸载 SD 卡，查看可用存储设备</string>
@@ -1085,7 +1068,6 @@ PIN 可能不正确。"</string>
 
 准备好开始了吗？请触摸“下一步”。"</string>
     <string name="advanced_settings_title">设备选项</string>
-    <string name="ussd_dialer_title">USSD拨号器</string>
     <string name="manageapplications_settings_title">管理应用</string>
     <string name="manageapplications_settings_summary">管理和删除已安装的应用</string>
     <string name="applications_settings">应用</string>
@@ -1368,8 +1350,8 @@ PIN 可能不正确。"</string>
     <string name="accessibility_screen_magnification_summary">"启用此功能后，您可以通过点按屏幕三次进行缩放。
 
 放大时，您可以：
-"<li><ul>"平移：在屏幕上拖动两根或更多根手指。
-"<li>调整缩放级别：开合两根或更多根手指。</li></ul></li>"
+"<ul><li>"平移：在屏幕上拖动两根或更多根手指。
+"<li>调整缩放级别：开合两根或更多根手指。</li></li></ul>"
 
 同时，您还可以通过点按三次并按住的方法来暂时性地放大手指触摸到的内容。在此放大状态下，您可以拖动手指查看屏幕上的各个部分。松开手指即可返回之前的状态。
 
@@ -1861,36 +1843,10 @@ PIN 可能不正确。"</string>
     <string name="backup_pw_set_button_text">设置备份密码</string>
     <string name="backup_pw_cancel_button_text">取消</string>
     <string name="percentage">%d%%</string>
-    <string name="sel_sub_title">配置预约</string>
-    <string name="sel_sub_summary">选择预约1、预约2或其他..</string>
-    <string name="select_subscription">选择预约</string>
-    <string name="subs_settings">预约状态</string>
-    <string name="multi_sim_settings_title">多SIM卡设置</string>
-    <string name="multi_sim_settings_summary">设置多个SIM的语音、数据、短信</string>
-    <string name="voice_title">语音/USSD/MMI</string>
-    <string name="voice_summary">为语音来电选择预约</string>
-    <string name="data_title">数据来电</string>
-    <string name="data_summary">为数据来电选择预约</string>
-    <string name="sms_title">短信</string>
-    <string name="sms_summary">为短信选择预约</string>
-    <string name="set_data_subscription_progress">设置数据预约..</string>
-    <string name="set_dds_success">数据预约设置成功</string>
-    <string name="set_dds_failed">未能设置数据预约，移除现有的任何数据连接并重试。</string>
-    <string name="set_dds_error">未能设置数据预约</string>
-    <string name="set_sms_error">未能设置短信预约，预约未启用</string>
-    <string name="set_voice_error">未能设置语音预约，预约未启用</string>
-    <string name="set_priority_sub_error">未能设置优先预约，预约未启用</string>
-    <string name="prompt_user">提示用户</string>
     <string name="additional_system_update_settings_list_item_title">其他系统更新</string>
     <string name="selinux_status_disabled">已停用</string>
     <string name="selinux_status_permissive">许可</string>
     <string name="selinux_status_enforcing">执行中</string>
-    <string name="tune_away_title">离线</string>
-    <string name="tune_away_Default">禁用</string>
-    <string name="tune_away_enabled">离线启用！</string>
-    <string name="tune_away_disabled">离线禁用！</string>
-    <string name="priority_sub_title">优先预约</string>
-    <string name="priority_sub_summary">选择优先预约</string>
     <string name="user_settings_title">用户</string>
     <string name="user_list_title">用户和个人资料</string>
     <string name="user_add_user_menu">添加用户或个人资料</string>
@@ -2086,9 +2042,7 @@ PIN 可能不正确。"</string>
     <string name="user_image_take_photo">拍照</string>
     <string name="user_image_choose_photo">从图库中选择照片</string>
     <string name="regulatory_info_text" />
-    <string name="confirm_delete_apn">这个 APN 将要被删除。</string>
     <string name="label_global_roaming_settings">国际漫游设置</string>
-    <string name="last_launcher">在卸载或禁用当前启动器之前请安装或启用其他启动器。</string>
     <string name="show_dev_on">您现在处于开发者模式！</string>
     <string name="show_dev_already">您已处于开发者模式，无需进行此操作。</string>
     <string name="permissions_settings_title">权限管理</string>

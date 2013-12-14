@@ -144,7 +144,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 45
-    const v4, 0x7f0400ac
+    const v4, 0x7f0400ab
 
     invoke-virtual {p0, v4}, Lcom/android/settings/inputmethod/UserDictionaryAddWordActivity;->setContentView(I)V
 

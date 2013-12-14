@@ -325,7 +325,7 @@
 
     move-result v3
 
-    const v4, 0x7f0d016a
+    const v4, 0x7f0d0167
 
     if-ne v3, v4, :cond_3
 
@@ -356,7 +356,7 @@
 
     move-result v3
 
-    const v4, 0x7f0d016b
+    const v4, 0x7f0d0168
 
     if-ne v3, v4, :cond_0
 
@@ -697,7 +697,7 @@
 
     .prologue
     .line 150
-    const v21, 0x7f0d0166
+    const v21, 0x7f0d0163
 
     move-object/from16 v0, p0
 
@@ -761,7 +761,7 @@
 
     .line 156
     .local v17, pkgs:[Ljava/lang/String;
-    const v21, 0x7f0d01a5
+    const v21, 0x7f0d01a2
 
     move-object/from16 v0, p0
 
@@ -1186,7 +1186,7 @@
     .end local v15           #pi:Landroid/content/pm/PackageInfo;
     .end local v16           #pkg:Ljava/lang/String;
     :cond_1
-    const v21, 0x7f0d01a5
+    const v21, 0x7f0d01a2
 
     move-object/from16 v0, p0
 
@@ -1403,12 +1403,12 @@
     const/4 v9, 0x0
 
     .line 449
-    const v5, 0x7f04008f
+    const v5, 0x7f04008e
 
     invoke-virtual {p0, v5}, Lcom/koushikdutta/superuser/MultitaskSuRequestActivity;->setContentView(I)V
 
     .line 451
-    const v5, 0x7f0d016c
+    const v5, 0x7f0d0169
 
     invoke-virtual {p0, v5}, Lcom/koushikdutta/superuser/MultitaskSuRequestActivity;->findViewById(I)Landroid/view/View;
 
@@ -1423,9 +1423,9 @@
 
     new-instance v6, Landroid/widget/ArrayAdapter;
 
-    const v7, 0x7f040092
+    const v7, 0x7f040091
 
-    const v8, 0x7f0d016d
+    const v8, 0x7f0d016a
 
     invoke-direct {v6, p0, v7, v8}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;II)V
 
@@ -1478,7 +1478,7 @@
     .line 457
     .end local v2           #id:I
     :cond_0
-    const v5, 0x7f0d0165
+    const v5, 0x7f0d0162
 
     invoke-virtual {p0, v5}, Lcom/koushikdutta/superuser/MultitaskSuRequestActivity;->findViewById(I)Landroid/view/View;
 
@@ -1489,7 +1489,7 @@
     iput-object v5, p0, Lcom/koushikdutta/superuser/MultitaskSuRequestActivity;->mRemember:Landroid/widget/RadioGroup;
 
     .line 458
-    const v5, 0x7f0d016a
+    const v5, 0x7f0d0167
 
     invoke-virtual {p0, v5}, Lcom/koushikdutta/superuser/MultitaskSuRequestActivity;->findViewById(I)Landroid/view/View;
 
@@ -1520,7 +1520,7 @@
     invoke-virtual {v4, v5}, Landroid/widget/RadioButton;->setText(Ljava/lang/CharSequence;)V
 
     .line 461
-    const v5, 0x7f0d0168
+    const v5, 0x7f0d0165
 
     invoke-virtual {p0, v5}, Lcom/koushikdutta/superuser/MultitaskSuRequestActivity;->findViewById(I)Landroid/view/View;
 
@@ -1531,7 +1531,7 @@
     iput-object v5, p0, Lcom/koushikdutta/superuser/MultitaskSuRequestActivity;->mAllow:Landroid/widget/Button;
 
     .line 462
-    const v5, 0x7f0d0167
+    const v5, 0x7f0d0164
 
     invoke-virtual {p0, v5}, Lcom/koushikdutta/superuser/MultitaskSuRequestActivity;->findViewById(I)Landroid/view/View;
 

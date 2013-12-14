@@ -83,12 +83,12 @@
     iput-object v0, p0, Lcom/android/settings/inputmethod/InputMethodPreference;->mPrefOnclickListener:Landroid/view/View$OnClickListener;
 
     .line 87
-    const v0, 0x7f04007c
+    const v0, 0x7f04007b
 
     invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/InputMethodPreference;->setLayoutResource(I)V
 
     .line 88
-    const v0, 0x7f04007d
+    const v0, 0x7f04007c
 
     invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/InputMethodPreference;->setWidgetLayoutResource(I)V
 
@@ -888,7 +888,7 @@
     invoke-super {p0, p1}, Landroid/preference/CheckBoxPreference;->onBindView(Landroid/view/View;)V
 
     .line 106
-    const v3, 0x7f0d011e
+    const v3, 0x7f0d011b
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -904,7 +904,7 @@
     invoke-virtual {v3, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 108
-    const v3, 0x7f0d011f
+    const v3, 0x7f0d011c
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

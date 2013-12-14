@@ -246,7 +246,7 @@
 
     .prologue
     .line 94
-    const v0, 0x7f040084
+    const v0, 0x7f040083
 
     invoke-virtual {p0, v0}, Lcom/android/settings/TimeRangePreference;->setLayoutResource(I)V
 
@@ -395,7 +395,7 @@
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
     .line 77
-    const v2, 0x7f0d0129
+    const v2, 0x7f0d0126
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -414,7 +414,7 @@
 
     .line 82
     :cond_0
-    const v2, 0x7f0d012b
+    const v2, 0x7f0d0128
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -433,7 +433,7 @@
 
     .line 87
     :cond_1
-    const v2, 0x7f0d012a
+    const v2, 0x7f0d0127
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -444,7 +444,7 @@
     iput-object v2, p0, Lcom/android/settings/TimeRangePreference;->mStartTimeText:Landroid/widget/TextView;
 
     .line 88
-    const v2, 0x7f0d012c
+    const v2, 0x7f0d0129
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -470,7 +470,7 @@
     if-eqz p1, :cond_0
 
     .line 133
-    const v0, 0x7f0d0129
+    const v0, 0x7f0d0126
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -490,7 +490,7 @@
 
     .line 135
     :cond_1
-    const v0, 0x7f0d012b
+    const v0, 0x7f0d0128
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 

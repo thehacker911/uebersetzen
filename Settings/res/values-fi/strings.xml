@@ -1324,8 +1324,8 @@ Jotkin sovellukset toimivat vasta, kun kehittäjät päivittävät ne."</string>
     <string name="accessibility_screen_magnification_summary">"Kun tämä ominaisuus on käytössä, voit lähentää ja loitontaa kolmoisnapauttamalla ruutua.
 
 Lähennetyssä tilassa voit
-"<li><ul>"panoroida vetämällä vähintään kahta sormea ruudun poikki
-"<li>säätää lähennyksen tasoa nipistämällä vähintään kaksi sormea yhteen tai levittämällä ne erilleen.</li></ul></li>"
+"<ul><li>"panoroida vetämällä vähintään kahta sormea ruudun poikki
+"<li>säätää lähennyksen tasoa nipistämällä vähintään kaksi sormea yhteen tai levittämällä ne erilleen.</li></li></ul>"
 
 Voit myös suurentaa sormesi alla olevan kohteen väliaikaisesti kolmoisnapauttamalla ja pitämällä viimeisen napautuksen ruudulla. Suurennetussa tilassa voit tutkia ruudun eri osia sormella vetämällä. Nostamalla sormen pääset takaisin edelliseen tilaan.
 

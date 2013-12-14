@@ -75,7 +75,7 @@
     invoke-static {v6}, Lcom/android/settings/SelectSubscription;->log(Ljava/lang/String;)V
 
     .line 67
-    const v6, 0x7f040098
+    const v6, 0x7f040097
 
     invoke-virtual {p0, v6}, Lcom/android/settings/SelectSubscription;->setContentView(I)V
 

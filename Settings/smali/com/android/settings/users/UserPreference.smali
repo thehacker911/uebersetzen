@@ -68,7 +68,7 @@
 
     .line 52
     :cond_0
-    const v0, 0x7f040086
+    const v0, 0x7f040085
 
     invoke-virtual {p0, v0}, Lcom/android/settings/users/UserPreference;->setWidgetLayoutResource(I)V
 
@@ -234,7 +234,7 @@
     const/16 v5, 0x8
 
     .line 61
-    const v4, 0x7f0d0133
+    const v4, 0x7f0d0130
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -242,7 +242,7 @@
 
     .line 62
     .local v0, deleteDividerView:Landroid/view/View;
-    const v4, 0x7f0d0131
+    const v4, 0x7f0d012e
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -250,7 +250,7 @@
 
     .line 63
     .local v2, manageDividerView:Landroid/view/View;
-    const v4, 0x7f0d0134
+    const v4, 0x7f0d0131
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -276,7 +276,7 @@
     .line 73
     :cond_0
     :goto_0
-    const v4, 0x7f0d0132
+    const v4, 0x7f0d012f
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

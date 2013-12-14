@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 344
+    .line 346
     iput-object p1, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications$7;->this$0:Lcom/aokp/romcontrol/fragments/StatusBarNotifications;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,15 +43,15 @@
     .parameter "which"
 
     .prologue
-    .line 346
+    .line 348
     iget-object v0, p0, Lcom/aokp/romcontrol/fragments/StatusBarNotifications$7;->this$0:Lcom/aokp/romcontrol/fragments/StatusBarNotifications;
 
     #calls: Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->resetWallpaper()V
     invoke-static {v0}, Lcom/aokp/romcontrol/fragments/StatusBarNotifications;->access$500(Lcom/aokp/romcontrol/fragments/StatusBarNotifications;)V
 
-    .line 347
+    .line 349
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 348
+    .line 350
     return-void
 .end method

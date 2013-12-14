@@ -83,7 +83,7 @@
     .prologue
     const/4 v1, 0x2
 
-    .line 3279
+    .line 3276
     const/4 v0, 0x5
 
     new-array v0, v0, [I
@@ -92,7 +92,7 @@
 
     sput-object v0, Lcom/aokp/romcontrol/R$styleable;->DeveloperPreference:[I
 
-    .line 3395
+    .line 3392
     const/16 v0, 0x11
 
     new-array v0, v0, [I
@@ -101,14 +101,14 @@
 
     sput-object v0, Lcom/aokp/romcontrol/R$styleable;->DragSortListView:[I
 
-    .line 3665
+    .line 3662
     new-array v0, v1, [I
 
     fill-array-data v0, :array_2
 
     sput-object v0, Lcom/aokp/romcontrol/R$styleable;->ImageListPreference:[I
 
-    .line 3700
+    .line 3697
     new-array v0, v1, [I
 
     fill-array-data v0, :array_3
@@ -117,7 +117,7 @@
 
     return-void
 
-    .line 3279
+    .line 3276
     nop
 
     :array_0
@@ -129,7 +129,7 @@
         0x6t 0x0t 0x1t 0x7ft
     .end array-data
 
-    .line 3395
+    .line 3392
     :array_1
     .array-data 0x4
         0x9t 0x0t 0x1t 0x7ft
@@ -151,14 +151,14 @@
         0x19t 0x0t 0x1t 0x7ft
     .end array-data
 
-    .line 3665
+    .line 3662
     :array_2
     .array-data 0x4
         0x7t 0x0t 0x1t 0x7ft
         0x8t 0x0t 0x1t 0x7ft
     .end array-data
 
-    .line 3700
+    .line 3697
     :array_3
     .array-data 0x4
         0x0t 0x0t 0x1t 0x7ft
@@ -170,7 +170,7 @@
     .locals 0
 
     .prologue
-    .line 3260
+    .line 3257
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

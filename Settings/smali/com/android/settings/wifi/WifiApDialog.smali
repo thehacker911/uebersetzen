@@ -107,7 +107,7 @@
     .locals 2
 
     .prologue
-    const v1, 0x7f0d01dc
+    const v1, 0x7f0d01d9
 
     .line 196
     iget v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurityTypeIndex:I
@@ -421,7 +421,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0400b5
+    const v3, 0x7f0400b4
 
     const/4 v4, 0x0
 
@@ -434,7 +434,7 @@
     .line 121
     iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
-    const v3, 0x7f0d01db
+    const v3, 0x7f0d01d8
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -465,7 +465,7 @@
     .line 129
     iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
-    const v3, 0x7f0d01b4
+    const v3, 0x7f0d01b1
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -478,7 +478,7 @@
     .line 130
     iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
-    const v3, 0x7f0d01da
+    const v3, 0x7f0d01d7
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -581,7 +581,7 @@
     .line 148
     iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
-    const v3, 0x7f0d01dd
+    const v3, 0x7f0d01da
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

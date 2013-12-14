@@ -24,4 +24,8 @@
     <header android:icon="@drawable/ic_rom_control_sound" android:id="@id/sound" android:title="@string/sound" android:summary="@string/header_summary_sound" android:fragment="com.aokp.romcontrol.fragments.Sound" />
     <header android:icon="@drawable/ic_rom_control_vibrations" android:id="@id/vibrations" android:title="@string/vibrations" android:summary="@string/header_summary_vibrations" android:fragment="com.aokp.romcontrol.fragments.Vibrations" />
     <header android:icon="@drawable/ic_rom_control_installer" android:id="@id/installer" android:title="@string/installer" android:summary="@string/header_summary_installer" android:fragment="com.aokp.romcontrol.fragments.Installer" />
+    <header android:title="OTA Center" />
+    <header android:icon="@drawable/ic_ota" android:title="@string/ota_center">
+        <intent android:targetPackage="com.acquariusoft.UpdateMe" android:action="android.intent.action.MAIN" android:targetClass="com.acquariusoft.UpdateMe.UpdateMeActivity" />
+    </header>
 </preference-headers>

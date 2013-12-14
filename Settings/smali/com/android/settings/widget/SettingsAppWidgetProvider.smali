@@ -214,13 +214,13 @@
 
     move-result-object v1
 
-    const v2, 0x7f0400b4
+    const v2, 0x7f0400b3
 
     invoke-direct {v0, v1, v2}, Landroid/widget/RemoteViews;-><init>(Ljava/lang/String;I)V
 
     .line 664
     .local v0, views:Landroid/widget/RemoteViews;
-    const v1, 0x7f0d01ca
+    const v1, 0x7f0d01c7
 
     const/4 v2, 0x0
 
@@ -231,7 +231,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/widget/RemoteViews;->setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
 
     .line 666
-    const v1, 0x7f0d01d6
+    const v1, 0x7f0d01d3
 
     const/4 v2, 0x1
 
@@ -242,7 +242,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/widget/RemoteViews;->setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
 
     .line 669
-    const v1, 0x7f0d01d3
+    const v1, 0x7f0d01d0
 
     const/4 v2, 0x2
 
@@ -253,7 +253,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/widget/RemoteViews;->setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
 
     .line 672
-    const v1, 0x7f0d01d0
+    const v1, 0x7f0d01cd
 
     const/4 v2, 0x3
 
@@ -264,7 +264,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/widget/RemoteViews;->setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
 
     .line 674
-    const v1, 0x7f0d01cd
+    const v1, 0x7f0d01ca
 
     const/4 v2, 0x4
 
@@ -736,9 +736,9 @@
     .parameter "context"
 
     .prologue
-    const v10, 0x7f0d01d7
+    const v10, 0x7f0d01d4
 
-    const v9, 0x7f0d01d6
+    const v9, 0x7f0d01d3
 
     const v8, 0x7f08060f
 
@@ -796,7 +796,7 @@
     invoke-virtual {p0, v10, v4}, Landroid/widget/RemoteViews;->setImageViewResource(II)V
 
     .line 713
-    const v4, 0x7f0d01d8
+    const v4, 0x7f0d01d5
 
     const v5, 0x7f020016
 
@@ -881,7 +881,7 @@
     if-le v0, v2, :cond_3
 
     .line 744
-    const v4, 0x7f0d01d8
+    const v4, 0x7f0d01d5
 
     const v5, 0x7f020016
 
@@ -944,7 +944,7 @@
 
     .line 747
     :cond_3
-    const v4, 0x7f0d01d8
+    const v4, 0x7f0d01d5
 
     const v5, 0x7f020013
 

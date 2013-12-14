@@ -99,7 +99,7 @@
 
     .line 53
     .local v10, pkgs:[Ljava/lang/String;
-    const v13, 0x7f0d01a5
+    const v13, 0x7f0d01a2
 
     move-object/from16 v0, p0
 
@@ -281,7 +281,7 @@
     .end local v8           #pi:Landroid/content/pm/PackageInfo;
     .end local v9           #pkg:Ljava/lang/String;
     :cond_2
-    const v13, 0x7f0d01a5
+    const v13, 0x7f0d01a2
 
     move-object/from16 v0, p0
 

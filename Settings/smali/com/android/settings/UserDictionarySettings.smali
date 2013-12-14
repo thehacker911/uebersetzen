@@ -78,7 +78,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0400ae
+    const v2, 0x7f0400ad
 
     iget-object v3, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 

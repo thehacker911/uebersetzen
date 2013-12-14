@@ -117,7 +117,7 @@
 
     .prologue
     .line 93
-    const v0, 0x7f04007f
+    const v0, 0x7f04007e
 
     invoke-virtual {p0, v0}, Lcom/android/settings/ApnPreference;->setWidgetLayoutResource(I)V
 
