@@ -1,0 +1,13 @@
+version: 1.5.2
+apkFileName: ROMControl.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '17'
+  targetSdkVersion: '18'
+packageInfo:
+  cur_package: com.aokp.romcontrol
+  orig_package: com.aokp.romcontrol
+compressionType: false

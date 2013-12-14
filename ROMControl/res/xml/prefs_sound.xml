@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/enable_volume_options" android:key="enable_volume_options" />
+    <com.aokp.romcontrol.widgets.IncreasingRingPreference android:persistent="false" android:title="@string/increasing_ring_title" android:key="increasing_ring" android:dialogTitle="@string/increasing_ring_title" />
+    <ListPreference android:entries="@array/less_notification_sounds_entries" android:title="@string/less_notification_sounds_title" android:key="less_notification_sounds" android:summary="@string/less_notification_sounds_summary" android:entryValues="@array/less_notification_sounds_values" />
+    <ListPreference android:entries="@array/headphone_audio_mode_entries" android:title="@string/title_headphone_audio_mode" android:key="headphone_audio_mode" android:summary="@string/summary_headphone_audio_mode" android:defaultValue="-1" android:entryValues="@array/headphone_audio_mode_values" />
+    <ListPreference android:entries="@array/headphone_audio_mode_entries" android:title="@string/title_bt_audio_mode" android:key="bt_audio_mode" android:summary="@string/summary_bt_audio_mode" android:defaultValue="-1" android:entryValues="@array/headphone_audio_mode_values" />
+    <ListPreference android:entries="@array/phone_call_flip_entries" android:title="@string/title_phone_flip_mode" android:key="phone_ring_silence" android:summary="@string/summary_phone_flip_mode" android:entryValues="@array/phone_call_flip_values" />
+    <PreferenceCategory android:title="@string/flip_cat_title" android:key="flip_category">
+        <ListPreference android:entries="@array/headphone_audio_mode_entries" android:title="@string/title_flip_mode" android:key="flip_mode" android:summary="@string/summary_flip_mode" android:entryValues="@array/headphone_audio_mode_values" />
+        <ListPreference android:entries="@array/flip_entries" android:title="@string/title_down_sec" android:key="user_down_ms" android:summary="@string/summary_down_sec" android:defaultValue="1500" android:entryValues="@array/flip_values" />
+        <ListPreference android:entries="@array/flip_screenoff_entries" android:title="@string/title_timeout_sec" android:key="user_timeout" android:summary="@string/summary_timeout_sec" android:defaultValue="15000" android:entryValues="@array/flip_screenoff_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/vibrations_category" android:key="vibrate_category">
+        <com.aokp.romcontrol.widgets.VibDurationPreference android:title="@string/vibrate_intensity_title" android:key="generic_vibrate_intensity" />
+    </PreferenceCategory>
+</PreferenceScreen>

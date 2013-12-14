@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top|center" android:orientation="horizontal" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@*android:drawable/divider_horizontal_dark" android:showDividers="middle" android:dividerPadding="2.0dip">
+        <Button android:id="@id/button_new" android:text="@string/vib_new" style="@style/VibButton" />
+        <Button android:id="@id/button_load" android:text="@string/vib_load" style="@style/VibButton" />
+        <Button android:id="@id/button_del" android:text="@string/vib_del" style="@style/VibButton" />
+    </LinearLayout>
+    <View android:background="@*android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+    <TextView android:layout_gravity="center_horizontal" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vib_cur_loaded_title" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/vib_cur_loaded_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/pattern_bar" android:background="@drawable/pattern_bar_bg" android:padding="2.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" />
+    <Button android:id="@id/button_tap" android:padding="40.0dip" android:layout_margin="16.0dip" android:text="@string/vib_TAP" style="@style/VibButton" />
+    <View android:background="@*android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="8.0dip" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textColor="#ffff0000" android:id="@id/button_rec" android:text="@string/vib_rec" style="@style/VibButton" />
+        <Button android:id="@id/button_stop" android:text="@string/vib_stop" style="@style/VibButton" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:enabled="false" android:id="@id/button_play" android:text="@string/vib_play" style="@style/VibButton" />
+        <Button android:enabled="false" android:id="@id/button_save" android:text="@string/vib_save" style="@style/VibButton" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0sp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="32.0sp" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/holo_light" android:ellipsize="end" android:gravity="top|center" android:id="@id/bypasstitle" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/quiet_hours_alarm_dialog_title" android:singleLine="true" />
+        <TextView android:textColor="@color/white" android:ellipsize="end" android:gravity="top|center" android:id="@id/bypasstext" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:paddingBottom="200.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" />
+    </LinearLayout>
+    <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="20.0sp" android:layout_marginRight="20.0sp" />
+    <FrameLayout android:background="@color/holo_light" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0sp" android:layout_marginTop="3.0sp" android:layout_marginRight="25.0sp" android:layout_marginBottom="3.0sp">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/white" android:gravity="center" android:id="@id/dismissalert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/quiet_hours_alarm_dismiss" android:singleLine="true" />
+    </FrameLayout>
+    <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="20.0sp" android:layout_marginRight="20.0sp" android:layout_marginBottom="150.0sp" />
+</LinearLayout>

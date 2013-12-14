@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/clock_style_entries" android:title="@string/clock_title_enable" android:key="clock_style" android:entryValues="@array/clock_style_values" />
+    <ListPreference android:entries="@array/clock_ampm_entries" android:title="@string/title_clock_ampm_entries" android:key="clock_am_pm_style" android:entryValues="@array/clock_ampm_values" />
+    <ListPreference android:entries="@array/clock_weekday_entries" android:title="@string/enable_clock_weekday" android:key="clock_weekday" android:summary="@string/enable_clock_weekday_summary" android:entryValues="@array/clock_weekday_values" />
+    <PreferenceCategory android:title="@string/colors" android:key="colors">
+        <net.margaritov.preference.colorpicker.ColorPickerPreference android:title="@string/clock_color_title" android:key="clock_color" android:defaultValue="@*android:color/holo_blue_light" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/notification_shade_clock" android:key="notification_shade_clock">
+        <ListPreference android:entries="@array/notification_action_entries" android:title="@string/title_clock_shortclick" android:key="clock_shortclick" android:entryValues="@array/notification_action_values" />
+        <ListPreference android:entries="@array/notification_action_entries" android:title="@string/title_clock_longclick" android:key="clock_longclick" android:entryValues="@array/notification_action_values" />
+        <ListPreference android:entries="@array/notification_action_entries" android:title="@string/title_clock_doubleclick" android:key="clock_doubleclick" android:entryValues="@array/notification_action_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:textAppearance="?android:textAppearanceSmall" android:id="@id/transparency_linked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:checked="true" android:text="@string/transparency_dialog_linked_transparency" />
+        <View android:background="#ff545454" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/statusbar_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/transparency_dialog_transparency_keyguard" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transparency_dialog_transparency" />
+        <com.aokp.romcontrol.widgets.AlphaSeekBar android:id="@id/statusbar_alpha" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/statusbar_label_keyguard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transparency_dialog_transparency_keyguard" />
+        <com.aokp.romcontrol.widgets.AlphaSeekBar android:id="@id/statusbar_keyguard_alpha" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <CheckBox android:textAppearance="?android:textAppearanceSmall" android:id="@id/statusbar_match_keyguard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:checked="true" android:text="@string/transparency_dialog_match_keyguard_alpha" />
+        <LinearLayout android:orientation="vertical" android:id="@id/navbar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#ff545454" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/navbar_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/transparency_dialog_navbar" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transparency_dialog_transparency" />
+            <com.aokp.romcontrol.widgets.AlphaSeekBar android:id="@id/navbar_alpha" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/navbar_label_keyguard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transparency_dialog_transparency_keyguard" />
+            <com.aokp.romcontrol.widgets.AlphaSeekBar android:id="@id/navbar_keyguard_alpha" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+            <CheckBox android:textAppearance="?android:textAppearanceSmall" android:id="@id/navbar_match_keyguard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:checked="true" android:text="@string/transparency_dialog_match_keyguard_alpha" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lockscreen_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#ff545454" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/lockscreen_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/transparency_dialog_lockscreen" />
+            <com.aokp.romcontrol.widgets.AlphaSeekBar android:id="@id/lockscreen_alpha" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

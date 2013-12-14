@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/dark_ui" android:key="ui_inverted_mode" />
+    <Preference android:title="@string/transparency_dialog_title" android:key="transparency_dialog" />
+    <PreferenceCategory android:title="@string/bootani_cat" android:key="bootani">
+        <Preference android:title="@string/custom_bootanimation_title" android:key="custom_bootanimation" android:summary="@string/custom_bootanimation_summary" />
+        <CheckBoxPreference android:title="@string/disable_bootanimation_title" android:key="disable_bootanimation" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/navbar_cat" android:key="navbar">
+        <ListPreference android:entries="@array/user_mode_ui_entries" android:title="@string/user_mode_ui" android:key="user_mode_ui" android:summary="@string/user_mode_ui_summary" android:entryValues="@array/user_mode_ui_values" />
+        <CheckBoxPreference android:title="@string/hide_extras" android:key="hide_extras" android:summary="@string/hide_extras_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/multipane_ui" android:key="force_dualpanel" android:summary="@string/multipane_ui_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/display_cat" android:key="display">
+        <CheckBoxPreference android:title="@string/show_overflow_title" android:key="show_overflow" android:summary="@string/show_overflow_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/rotate_180_title" android:key="rotate_180" android:summary="@string/rotate_180_summary" />
+        <CheckBoxPreference android:title="@string/rotate_270_title" android:key="rotate_270" android:summary="@string/rotate_270_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/wakeup_when_plugged_unplugged_title" android:key="wakeup_when_plugged_unplugged" android:summary="@string/wakeup_when_plugged_unplugged_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/system_power_crt_screen_off_title" android:key="system_power_crt_screen_off" android:summary="@string/system_power_crt_screen_off_summary" />
+        <ListPreference android:entries="@array/entries_system_power_crt_mode" android:title="@string/system_power_crt_mode_title" android:key="system_power_crt_mode" android:dependency="system_power_crt_screen_off" android:dialogTitle="@string/system_power_crt_mode_dialog_title" android:entryValues="@array/values_system_power_crt_mode" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/recents_cat" android:key="recents">
+        <CheckBoxPreference android:title="@string/recent_kill_all" android:key="recent_kill_all" android:summary="@string/recent_kill_all_summary" />
+        <CheckBoxPreference android:title="@string/recent_google_assist_title" android:key="recent_google_assist" android:summary="@string/recent_google_assist_summary" />
+        <CheckBoxPreference android:title="@string/ram_bar" android:key="ram_usage_bar" android:summary="@string/ram_bar_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

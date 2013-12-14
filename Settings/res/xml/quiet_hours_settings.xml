@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/quiet_hours_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <CheckBoxPreference android:title="@string/quiet_hours_enabled_title" android:key="quiet_hours_enabled" android:defaultValue="false" />
+    <com.android.settings.TimeRangePreference android:key="quiet_hours_timerange" android:dependency="quiet_hours_enabled" />
+    <CheckBoxPreference android:title="@string/quiet_hours_notifications_title" android:key="quiet_hours_notifications" android:dependency="quiet_hours_enabled" />
+    <CheckBoxPreference android:title="@string/quiet_hours_ringer_title" android:key="quiet_hours_ringer" android:dependency="quiet_hours_enabled" />
+    <CheckBoxPreference android:title="@string/quiet_hours_still_title" android:key="quiet_hours_still" android:dependency="quiet_hours_enabled" />
+    <CheckBoxPreference android:title="@string/quiet_hours_dim_title" android:key="quiet_hours_dim" android:dependency="quiet_hours_enabled" />
+    <PreferenceCategory android:title="@string/quiet_hours_auto_sms_group" android:key="sms_respond">
+        <ListPreference android:entries="@array/incoming_contact_entries" android:title="@string/quiet_hours_auto_sms_title" android:key="auto_sms" android:dependency="quiet_hours_enabled" android:defaultValue="0" android:entryValues="@array/incoming_contact_values" />
+        <ListPreference android:entries="@array/incoming_contact_entries" android:title="@string/quiet_hours_auto_sms_call_title" android:key="auto_sms_call" android:dependency="quiet_hours_enabled" android:defaultValue="0" android:entryValues="@array/incoming_contact_values" />
+        <Preference android:title="@string/quiet_hours_auto_string_title" android:key="auto_sms_message" android:dependency="quiet_hours_enabled" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/quiet_hours_bypass_group" android:key="quiethours_bypass">
+        <ListPreference android:entries="@array/incoming_contact_entries" android:title="@string/quiet_hours_sms_bypass_title" android:key="sms_bypass" android:dependency="quiet_hours_enabled" android:defaultValue="0" android:entryValues="@array/incoming_contact_values" />
+        <Preference android:title="@string/quiet_hours_sms_code_title" android:key="sms_bypass_code" android:dependency="quiet_hours_enabled" />
+        <ListPreference android:entries="@array/incoming_contact_entries" android:title="@string/quiet_hours_call_bypass_title" android:key="call_bypass" android:dependency="quiet_hours_enabled" android:defaultValue="0" android:entryValues="@array/incoming_contact_values" />
+        <ListPreference android:entries="@array/incoming_call_number_entries" android:title="@string/quiet_hours_calls_required_title" android:key="required_calls" android:dependency="quiet_hours_enabled" android:defaultValue="2" android:entryValues="@array/incoming_call_number_values" />
+        <RingtonePreference android:title="@string/quiet_hours_bypass_ringtone_title" android:key="bypass_ringtone" android:dependency="quiet_hours_enabled" android:ringtoneType="all" android:showSilent="false" />
+        <CheckBoxPreference android:title="@string/quiet_hours_bypass_ringtone_loop_title" android:key="loop_bypass_ringtone" android:dependency="quiet_hours_enabled" />
+    </PreferenceCategory>
+</PreferenceScreen>

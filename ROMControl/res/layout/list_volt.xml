@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff33b5e5" android:id="@id/Freq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/freq" />
+    <TextView android:textSize="16.0sp" android:id="@id/mVCurrent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/current" />
+    <TextView android:textSize="16.0sp" android:id="@id/mVSaved" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:text="@string/saved" />
+</LinearLayout>

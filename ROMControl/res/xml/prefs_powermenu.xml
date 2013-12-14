@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/title_show_screenshot" android:key="show_screenshot" />
+    <SwitchPreference android:title="@string/title_show_torch_toggle" android:key="show_torch_toggle" />
+    <SwitchPreference android:title="@string/title_show_airplane_toggle" android:key="show_airplane_toggle" />
+    <SwitchPreference android:title="@string/title_show_volume_state_toggle" android:key="show_volume_state_toggle" />
+    <SwitchPreference android:title="@string/title_show_navbar_hide" android:key="show_navbar_hide" />
+    <SwitchPreference android:title="@string/title_show_reboot_keyguard" android:key="show_reboot_keyguard" />
+</PreferenceScreen>

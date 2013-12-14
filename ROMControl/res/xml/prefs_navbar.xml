@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/navbar_enable_bar" android:key="enable_nav_bar" />
+    <PreferenceCategory android:title="@string/navbar_button_cat" android:key="navbar_buttons">
+        <ListPreference android:entries="@array/pref_navigation_menu_entries" android:title="@string/title_pref_menu_display" android:key="pref_menu_display" android:summary="@string/summary_pref_menu_display" android:entryValues="@array/pref_navigation_menu_values" />
+        <ListPreference android:entries="@array/pref_navigation_menu_display_entries" android:title="@string/title_pref_navigation_menu_display" android:key="navbar_menu_display" android:summary="@string/summary_pref_navigation_menu_display" android:entryValues="@array/pref_navigation_menu_display_values" />
+        <CheckBoxPreference android:title="@string/navigation_bar_menu_arrow_keys_title" android:key="navigation_bar_menu_arrow_keys" android:summary="@string/navigation_bar_menu_arrow_keys_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/navbar_color_cat" android:key="navbar_colors_cat">
+        <net.margaritov.preference.colorpicker.ColorPickerPreference android:title="@string/navigation_bar_color_title" android:key="nav_bar_color" android:defaultValue="\#000000" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference android:title="@string/navigation_bar_tint_title" android:key="nav_button_color" android:defaultValue="\#FFFFFF" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference android:title="@string/navigation_bar_glow_tint_title" android:key="nav_button_glow_color" android:summary="@string/navigation_bar_glow_tint_summary" android:defaultValue="\#FFFFFF" />
+        <com.aokp.romcontrol.widgets.SeekBarPreference android:title="@string/button_transparency_title" android:key="button_transparency" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/advanced_settings" android:key="advanced_cat">
+        <ListPreference android:persistent="false" android:entries="@array/glow_times_entries" android:title="@string/glow_times_title" android:key="glow_times" android:defaultValue="100|10" android:entryValues="@array/glow_times_values" />
+        <ListPreference android:entries="@array/navigation_bar_height_entries" android:title="@string/navigation_bar_height_title" android:key="navigation_bar_height" android:summary="@string/navigation_bar_height_summary" android:entryValues="@array/navigation_bar_height" />
+        <ListPreference android:entries="@array/navigation_bar_height_landscape_entries" android:title="@string/navigation_bar_height_landscape_title" android:key="navigation_bar_height_landscape" android:summary="@string/navigation_bar_height_landscape_summary" android:entryValues="@array/navigation_bar_height_landscape" />
+        <ListPreference android:entries="@array/navigation_bar_width_entries" android:title="@string/navigation_bar_width_title" android:key="navigation_bar_width" android:summary="@string/navigation_bar_width_summary" android:entryValues="@array/navigation_bar_width" />
+        <Preference android:enabled="false" android:title="@string/navbar_width_help_title" android:key="width_help" android:summary="@string/navbar_width_help_summary" />
+        <com.aokp.romcontrol.widgets.SeekBarPreference android:title="@string/width_port_title" android:key="width_port" />
+        <com.aokp.romcontrol.widgets.SeekBarPreference android:title="@string/width_land_title" android:key="width_land" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/navbar_hide" android:key="navbar_hide_cat">
+        <CheckBoxPreference android:title="@string/navbar_hide_enable_title" android:key="navbar_hide_enable" />
+        <com.aokp.romcontrol.widgets.SeekBarPreference android:title="@string/drag_handle_opacity_title" android:key="drag_handle_opacity" />
+        <com.aokp.romcontrol.widgets.SeekBarPreference android:title="@string/drag_handle_width_title" android:key="drag_handle_width" />
+        <ListPreference android:entries="@array/hide_navbar_timeout_entries" android:title="@string/title_navbar_timeout" android:key="navbar_hide_timeout" android:summary="@string/summary_navbar_timeout" android:entryValues="@array/hide_navbar_timeout_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/navbar_widgets" android:key="navbar_widgets_cat">
+        <Preference android:title="@string/navbar_widgets_title" android:key="navigation_bar_widgets" />
+    </PreferenceCategory>
+</PreferenceScreen>

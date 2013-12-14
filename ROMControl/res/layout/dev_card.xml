@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/image_here" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="150.0dip">
+        <ImageView android:id="@id/photo" android:layout_width="fill_parent" android:layout_height="150.0dip" android:scaleType="centerCrop" />
+        <View android:id="@id/photo_text_bar" android:background="#7f000000" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_alignLeft="@id/photo" android:layout_alignBottom="@id/photo" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_alignLeft="@id/photo" android:layout_alignBottom="@id/photo">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@*android:color/white" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" />
+            <ImageView android:id="@id/twitter_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/twitter_birdy" android:scaleType="centerInside" />
+        </LinearLayout>
+        <ImageView android:id="@id/donate_button" android:paddingRight="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/paypal_donate" android:scaleType="centerInside" android:layout_toLeftOf="@id/github_button" android:layout_alignBottom="@id/photo" />
+        <ImageView android:id="@id/github_button" android:paddingRight="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/github" android:scaleType="centerInside" android:layout_alignBottom="@id/photo" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

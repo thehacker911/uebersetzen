@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/configure_light_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:minWidth="@dimen/list_toggle_width"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.aokp.romcontrol">
+    <LinearLayout android:orientation="vertical" android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="24.0sp" android:typeface="sans" android:textStyle="bold" android:gravity="center_vertical" android:id="@id/title" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/toggle_rearrange_dialog_title_height" android:text="@string/toggle_dialog_arrange_title" />
+        <View android:id="@id/titleDividerTop" android:background="@*android:color/holo_blue_light" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    </LinearLayout>
+    <com.mobeta.android.dslv.DragSortListView android:id="@*android:id/list" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:remove_enabled="false" app:drag_start_mode="onDown" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/divider_horizontal_dim_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Switch android:id="@id/handle_switch" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/toggle_swap_handle_side" style="?android:attr/buttonBarStyle" />
+        <View android:background="@drawable/divider_horizontal_dim_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+            <Button android:id="@id/close" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/toggles_display_close" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+            <Button android:id="@id/add_toggles" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/add_toggles" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

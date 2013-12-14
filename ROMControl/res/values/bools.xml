@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="has_notification_led">true</bool>
+    <bool name="config_stylusGestures">false</bool>
+    <bool name="has_torch">true</bool>
+    <bool name="has_hardware_buttons">true</bool>
+    <bool name="has_fast_charge">true</bool>
+    <bool name="has_color_tuning">false</bool>
+    <bool name="has_led_brightness_feature">false</bool>
+    <bool name="has_led_charging_feature">true</bool>
+</resources>

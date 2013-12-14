@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/widget_frame" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_toggle_title" />
+    <TextView android:id="@id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_toggle_summary" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/reset_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@*android:drawable/ic_menu_revert" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/add_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@*android:drawable/ic_menu_add" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/save_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@*android:drawable/ic_menu_save" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/toggle_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/toggle_button_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/toggle_button_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/toggle_button_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/toggle_button_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/toggle_button_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>
